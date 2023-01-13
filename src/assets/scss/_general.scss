@@ -23,3 +23,37 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgb(248, 248, 248);
 }
+
+.main-btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 2.9rem 4.8rem;
+  font-size: 1.63rem;
+  font-weight: $f-b;
+  color: #000000;
+  letter-spacing: 0.068rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  border: 0.13rem solid #000000;
+  border-radius: 1.9rem;
+  transition: 0.3s;
+
+  &:hover &__icon {
+    transform: translateX(1rem);
+  }
+
+  @include breakpoint($xl-bp) {
+    padding: 1.7rem;
+    font-size: 1.1rem;
+    border-radius: 1.3rem;
+  }
+
+  &__icon {
+    width: 5.3rem;
+    height: 1.1rem;
+    fill: #000000;
+    transition: 0.3s;
+  }
+}
