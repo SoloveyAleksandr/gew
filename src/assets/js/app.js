@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
+    swiper.autoplay.stop();
 
     const titles = gsap.utils.toArray('.main-swiper-pagination__title');
     const btns = gsap.utils.toArray('.main-swiper-pagination-btn');
@@ -113,6 +114,55 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     pagination = new Pagination(btns, titles, swiper);
+
+    if (document.querySelector('.main-swiper-conteiner')) {
+      gsap.from('.main-swiper', {
+        opacity: 0,
+        scale: 0,
+        duration: 2.5,
+        delay: 2,
+      });
+      gsap.from('.main-swiper-wrapper', {
+        opacity: 0,
+        y: '-100vh',
+        duration: 1.2,
+        delay: 3,
+        onComplete: () => swiper.autoplay.start(),
+      });
+
+      gsap.from('.main-title', {
+        x: "-100vw",
+        duration: 2,
+        delay: 2.2,
+      });
+      gsap.from('.main-subtitle', {
+        x: "-100vw",
+        duration: 2,
+        delay: 2.5,
+      });
+    }
+  }
+
+  if (document.querySelector('.main-collections')) {
+    const animList = gsap.utils.toArray('.main-collections-item');
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.main-collections',
+        start: "top 50%",
+        end: "bottom 10%",
+        toggleActions: "play reverse play reverse",
+        markers: true,
+      }
+    })
+    animList.forEach((item, index) => {
+      tl.from(item, {
+        opacity: 0,
+        y: '+=20rem',
+        duration: 1,
+        delay: index * 0.2,
+
+      }, 'sin')
+    })
   }
 
   if (document.querySelector('.main-portfolio-swiper')) {
@@ -137,8 +187,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // animation
-
-
-  //<==
 })
