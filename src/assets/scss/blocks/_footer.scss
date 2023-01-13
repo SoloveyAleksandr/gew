@@ -4,8 +4,16 @@
   &-container {
     max-width: 166.9rem;
     margin: 0 5% 0 auto;
-    border-top: 0.2rem solid #D8D8D8;
+    border-top: 0.2rem solid #d8d8d8;
     padding-top: 3.5rem;
+
+    @include breakpoint($cos-bp) {
+      margin: 0 auto;
+    }
+
+    @include breakpoint($xl-bp) {
+      padding-top: 0.4rem;
+    }
   }
 
   &-nav {
@@ -14,16 +22,49 @@
     justify-content: space-between;
     padding: 0 22.5rem 0 20.4rem;
     padding-bottom: 3.9rem;
-    border-bottom: 0.2rem solid #D8D8D8;
+    border-bottom: 0.2rem solid #d8d8d8;
     margin-bottom: 3.2rem;
+
+    @include breakpoint($cos-bp) {
+      padding: 0 2.9rem 3.2rem;
+    }
+
+    @include breakpoint($xl-bp) {
+      margin-bottom: 0.4rem;
+    }
+
+    @include breakpoint($jb-bp) {
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      row-gap: 3rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      grid-template-columns: repeat(2, auto);
+    }
 
     &-item {
       display: flex;
       flex-direction: column;
       gap: 1.2rem;
 
+      @include breakpoint($jb-bp) {
+        &:first-child {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+
       &:last-child {
         padding-top: 2.2rem;
+
+        @include breakpoint($jb-bp) {
+          padding: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
 
       a:hover {
@@ -37,27 +78,43 @@
       font-family: $ff-p;
       line-height: 4rem;
       color: rgba(44, 46, 63, 0.7);
-      transition: .3s;
+      transition: 0.3s;
+
+      @include breakpoint($xl-bp) {
+        font-size: 1.1rem;
+        line-height: 3.2rem;
+      }
 
       &_bold {
         font-weight: $f-s;
         line-height: 100%;
         color: rgb(44, 46, 63);
+        line-height: 3.2rem;
       }
 
       &_big {
         margin-bottom: 3.3rem;
         font-size: 1.8rem;
+
+        @include breakpoint($xl-bp) {
+          font-size: 1.3rem;
+          margin-bottom: 0.1rem;
+        }
       }
     }
 
     &-logo {
       width: 12.7rem;
       height: 16rem;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         opacity: 0.5;
+      }
+
+      @include breakpoint($xl-bp) {
+        width: 7.4rem;
+        height: 9.4rem;
       }
 
       &__img {
@@ -75,6 +132,16 @@
     justify-content: space-between;
     padding-right: 5.7rem;
 
+    @include breakpoint($xl-bp) {
+      padding: 0 2.9rem;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      font-weight: $f-r;
+      line-height: 2.8rem;
+    }
+
     &-icons {
       display: flex;
       align-items: center;
@@ -84,10 +151,15 @@
     &-link {
       width: 2.2rem;
       height: 2.2rem;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         opacity: 0.5;
+      }
+
+      @include breakpoint($xl-bp) {
+        width: 2rem;
+        height: 2rem;
       }
 
       &__icon {
