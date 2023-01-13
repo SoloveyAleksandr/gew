@@ -72,8 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
       effect: 'slide',
       loop: true,
       speed: 500,
+      autoplay: {
+        delay: 3000,
+      },
       centeredSlides: true,
       slidesPerView: 'auto',
+      touchMoveStopPropagation: true,
 
       pagination: {
         el: '.main-portfolio-pagination',
