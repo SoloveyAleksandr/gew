@@ -4,28 +4,107 @@
   width: 100%;
   padding-top: 3.1rem;
 
+  @include breakpoint($xl-bp) {
+    padding-top: 0.9rem;
+  }
+
   &-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 183.4rem;
     margin: 0 1.9% 0 auto;
+
+    @include breakpoint($cos-bp) {
+      margin: 0 auto;
+      padding: 0 2.9rem;
+    }
+  }
+
+  &-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint($lb-bp) {
+      display: flex;
+    }
+
+    &-burger {
+      width: 2.5rem;
+      height: 0.2rem;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: 0.5s;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        transition: 0.5s;
+      }
+
+      &::before {
+        top: -0.7rem;
+      }
+
+      &::after {
+        top: 0.7rem;
+      }
+    }
+
+    &._active &-burger {
+      transform: rotate(135deg);
+
+      &::before,
+      &::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
   }
 
   &-menu {
     display: flex;
     align-items: center;
     gap: 4.4rem;
+
+    @include breakpoint($xl-bp) {
+      gap: 1.8rem;
+    }
   }
 
   &-logo {
     width: 5.94rem;
     height: 6.32rem;
     margin-right: 5.86rem;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
       opacity: 0.5;
+    }
+
+    @include breakpoint($xl-bp) {
+      width: 3.2rem;
+      height: 3.4rem;
+      margin-right: 2rem;
+    }
+
+    @include breakpoint($lb-bp) {
+      margin: 0;
     }
 
     &__img {
@@ -41,16 +120,24 @@
     font-weight: $f-m;
     font-family: $ff-p;
     color: #141517;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
       opacity: 0.5;
     }
 
+    @include breakpoint($xl-bp) {
+      font-size: 1.4rem;
+    }
+
+    @include breakpoint($lb-bp) {
+      display: none;
+    }
+
     &_btn {
       color: rgba(46, 108, 101, 0.7);
       padding: 0.2rem 1.6rem;
-      border: 0.2rem solid #2E6C65;
+      border: 0.2rem solid #2e6c65;
       border-radius: 3.2rem;
     }
   }
@@ -68,6 +155,13 @@
       width: 23.9rem;
       border-bottom: 0.1rem solid #000;
       padding-bottom: 0.5rem;
+
+      @include breakpoint($lb-bp) {
+        position: relative;
+        width: fit-content;
+        border: none;
+        padding: 0;
+      }
     }
 
     &__input {
@@ -83,10 +177,31 @@
       font-family: $ff-p;
 
       &::placeholder {
-        color: #2C2E3F;
+        color: #2c2e3f;
         font-size: 1.3rem;
         font-weight: $f-r;
         font-family: $ff-p;
+      }
+
+      @include breakpoint($lb-bp) {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 110%;
+        padding: 0.5rem 0.8rem 0.3rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+        border-bottom: 0.1rem solid #000;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        background-color: #fff;
+        transform: translateY(2rem);
+
+        &._active {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: all;
+        }
       }
     }
 
@@ -96,22 +211,45 @@
       margin: 0;
       background-color: transparent;
       outline: none;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         opacity: 0.5;
       }
+
+      &__search {
+        width: 2rem;
+        height: 2rem;
+
+        @include breakpoint($lb-bp) {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+
+      &__heart {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        @include breakpoint($lb-bp) {
+          display: none;
+        }
+      }
     }
 
     &__icon {
-      width: 1.8rem;
-      height: 1.8rem;
-      stroke: #000;
+      object-fit: contain;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+      fill: #000;
     }
 
     &__icon-heart {
-      width: 2.4rem;
-      height: 2.4rem;
+      object-fit: contain;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
       fill: #000;
 
       &._active {

@@ -431,12 +431,6 @@
         justify-content: center;
         outline: none;
         margin: 0 2.5rem;
-        // pointer-events: none;
-
-        // &.swiper-slide-active,
-        // &.swiper-slide-duplicate-active {
-        //   pointer-events: all;
-        // }
 
         &.swiper-slide-active &__img,
         &.swiper-slide-duplicate-active &__img {

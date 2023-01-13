@@ -1,4 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // HEADER & MENU
+  if (document.querySelector('.header')) {
+    // menu
+    const MENU_BTN = document.querySelector('.header-btn');
+    MENU_BTN.onclick = () => MENU_BTN.classList.toggle('_active');
+
+    // search
+    const SEARCH_BTN = document.querySelector('.header-search-btn__search');
+    const SEARCH_INPUT = document.querySelector('.header-search__input');
+
+    class Search {
+      constructor(btn, input) {
+        this.btn = btn;
+        this.input = input;
+        this.isActive = false;
+        this.init();
+      }
+
+      init() {
+        window.onclick = this.closeSearch.bind(this);
+        this.input.onclick = (e) => e.stopPropagation();
+        this.btn.onclick = (e) => {
+          e.stopPropagation();
+          this.isActive ?
+            this.closeSearch.call(this) :
+            this.openSearch.call(this);
+        };
+      }
+
+      openSearch() {
+        this.isActive = true;
+        if (window.innerWidth <= 650) {
+          this.input.classList.add('_active');
+          this.input.focus();
+        }
+      }
+
+      closeSearch() {
+        this.isActive = false;
+        this.input.classList.remove('_active');
+      }
+    }
+
+    new Search(SEARCH_BTN, SEARCH_INPUT);
+  }
+  //<==
+
+
   // MAIN
   if (document.querySelector('.main-swiper')) {
     let pagination = null;
@@ -88,5 +136,9 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+
+  // animation
+
+
   //<==
 })
