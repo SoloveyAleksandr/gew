@@ -151,7 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
         start: "top 50%",
         end: "bottom 10%",
         toggleActions: "play reverse play reverse",
-        markers: true,
       }
     })
     animList.forEach((item, index) => {
@@ -186,5 +185,26 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+
+  // CATALOG
+  if (document.querySelector('.catalog-list')) {
+    const animList = gsap.utils.toArray('.catalog-list-item');
+
+    animList.forEach(item => {
+      gsap.from(item, {
+        opacity: 0,
+        y: '15rem',
+        duration: 1,
+        scrollTrigger: {
+          trigger: item,
+          start: "top 90%",
+          end: "bottom 0",
+          toggleActions: "play none play reverse",
+          markers: true,
+        }
+      })
+    })
+  }
+  //<==
 
 })
