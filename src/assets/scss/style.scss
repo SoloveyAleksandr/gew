@@ -49,6 +49,8 @@ svg {
   transition: all 0.1s linear;
 }
 
+@import "./blocks/loader";
+
 @import "./blocks/header";
 
 @import "./blocks/footer";

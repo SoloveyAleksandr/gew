@@ -1,4 +1,62 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const LOADER = document.querySelector('.loader');
+
+  if (LOADER) {
+    const loaderTL = gsap.timeline({
+      onComplete: () => {
+        LOADER.classList.add('_disable')
+      }
+    });
+
+    loaderTL.to('.loader-img', {
+      width: "15vw",
+      height: "15vw",
+      opacity: 1,
+      duration: 2,
+    })
+      .fromTo('.loader-img-path_1', {
+        x: "10%",
+        y: "-10%",
+        filter: "drop-shadow(0 0 0.1rem #fff)",
+      },
+        {
+          x: "0%",
+          y: "0%",
+          filter: "drop-shadow(0 0 0rem #fff)",
+          duration: 1,
+        }, 'sin')
+      .fromTo('.loader-img-path_2', {
+        filter: "drop-shadow(0 0 0.1rem #fff)",
+      },
+        {
+          filter: "drop-shadow(0 0 0rem #fff)",
+          duration: 1,
+        }, 'sin')
+      .fromTo('.loader-img-path_3', {
+        x: "-10%",
+        y: "10%",
+        filter: "drop-shadow(0 0 0.1rem #fff)",
+      },
+        {
+          x: "0%",
+          y: "0%",
+          filter: "drop-shadow(0 0 0rem #fff)",
+          duration: 1,
+        }, 'sin')
+      .to('.loader-img', {
+        scale: 0.95,
+        duration: 1,
+      }, 'sin')
+      .from('body', {
+        overflow: 'hidden'
+      })
+      .to('.loader', {
+        opacity: 0,
+        duration: 1.5,
+        delay: 1,
+      })
+  }
+
   // HEADER & MENU
   if (document.querySelector('.header')) {
     // menu
@@ -120,25 +178,25 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0,
         scale: 0,
         duration: 2.5,
-        delay: 2,
+        delay: 5,
       });
       gsap.from('.main-swiper-wrapper', {
         opacity: 0,
         y: '-100vh',
         duration: 1.2,
-        delay: 3,
+        delay: 6,
         onComplete: () => swiper.autoplay.start(),
       });
 
       gsap.from('.main-title', {
         x: "-100vw",
         duration: 2,
-        delay: 2.2,
+        delay: 6,
       });
       gsap.from('.main-subtitle', {
         x: "-100vw",
         duration: 2,
-        delay: 2.5,
+        delay: 6.5,
       });
     }
   }
@@ -227,4 +285,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   //<== 
 
-})
+ })
