@@ -146,6 +146,10 @@
       display: flex;
       align-items: center;
       gap: 6.4rem;
+
+      @include breakpoint($xs-bp) {
+        gap: 3rem;
+      }
     }
 
     &-link {

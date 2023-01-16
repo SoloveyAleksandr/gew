@@ -1,0 +1,43 @@
+@import "../vars";
+
+.collection {
+  padding-top: 19rem;
+
+  @include breakpoint($xl-bp) {
+    padding-top: 7.8rem;
+  }
+
+  &-title {
+    font-size: 4.8rem;
+    font-weight: $f-b;
+    text-transform: uppercase;
+    color: #463F3A;
+    margin-bottom: 3.2rem;
+
+    @include breakpoint($xl-bp) {
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &-description {
+    font-size: 1.8rem;
+    font-weight: $f-l;
+    line-height: 159%;
+    color: #463F3A;
+    max-width: 83.2rem;
+    margin-bottom: 9rem;
+
+    @include breakpoint($xl-bp) {
+      font-size: 1.3rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &_semi-bold {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      font-weight: $f-s;
+    }
+  }
+}

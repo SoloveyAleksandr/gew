@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: '.main-collections',
         start: "top 50%",
         end: "bottom 10%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none play reverse",
       }
     })
     animList.forEach((item, index) => {
@@ -200,7 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
           start: "top 90%",
           end: "bottom 0",
           toggleActions: "play none play reverse",
-          markers: true,
         }
       })
     })
