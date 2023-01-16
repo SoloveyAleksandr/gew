@@ -206,4 +206,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   //<==
 
+  // WORK
+  if (document.querySelector('.work')) {
+    const mm = gsap.matchMedia();
+
+    mm.add({
+      isDesktop: '(min-width: 1025px) and (prefers-reduced-motion: no-preference)',
+    }, () => {
+      const tl = gsap.timeline();
+      const images = gsap.utils.toArray('.work-anim-img');
+      images.forEach((item, index) => {
+        tl.from(item, {
+          opacity: 0,
+          y: '20rem',
+          duration: 1,
+          delay: index * 0.2 + 1,
+        }, 'sin');
+      });
+    });
+  }
+  //<== 
+
 })
