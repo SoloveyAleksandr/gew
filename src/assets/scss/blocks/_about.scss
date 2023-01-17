@@ -1,0 +1,219 @@
+@import "../vars";
+
+.about {
+  padding-top: 22.7rem;
+
+  &-container {
+    max-width: 130.5rem;
+    margin: 0 auto;
+    padding: 0 2.9rem;
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5.7rem;
+    margin-bottom: 7.2rem;
+
+    &__title {
+      padding-left: 3.5rem;
+      font-size: 7.2rem;
+      font-weight: $f-b;
+      color: #463F3A;
+    }
+
+    &-info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10.6rem;
+
+      &-img {
+        width: 78.2rem;
+        height: 50rem;
+
+        &__img {
+          object-fit: cover;
+          object-position: center center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__text {
+        flex: 1;
+        font-size: 1.8rem;
+        font-weight: $f-l;
+        color: #463F3A;
+        line-height: 158.7%;
+
+        &_bold {
+          font-weight: $f-s;
+          font-size: inherit;
+          color: inherit;
+          line-height: inherit;
+        }
+      }
+    }
+  }
+
+  &-info {
+    height: 83.9rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 8.8rem;
+
+    &-text {
+      padding: 8.1rem 18.4rem 8.1rem 4.6rem;
+      background-color: #F4F3EE;
+      width: 50.4rem;
+      min-height: 57.8rem;
+      font-size: 1.8rem;
+      font-weight: $f-l;
+      color: #463F3A;
+      text-align: justify;
+      line-height: 158.7%;
+
+      &_bold {
+        font-weight: $f-s;
+        font-size: inherit;
+        color: inherit;
+        line-height: inherit;
+      }
+    }
+
+    &-img {
+      width: 86.7rem;
+      height: 58.7rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      &__img {
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-light {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 7.2rem;
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      gap: 7.2rem;
+
+      &-img {
+        &__img {
+          object-fit: cover;
+          object-position: center center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 1.8rem;
+        font-weight: $f-l;
+        color: #463F3A;
+        line-height: 158.7%;
+        text-align: justify;
+
+        &_bold {
+          font-weight: $f-s;
+          font-size: inherit;
+          color: inherit;
+          line-height: inherit;
+        }
+      }
+
+      &-1 {
+        align-items: center;
+
+        .about-light-col {
+          &-img {
+            width: 66.4rem;
+            height: 43.4rem;
+          }
+
+          &__text {
+            max-width: 49rem;
+          }
+        }
+      }
+
+      &-2 {
+        align-items: flex-start;
+
+        .about-light-col {
+          &-img {
+            width: 45.8rem;
+            height: 63.3rem;
+          }
+
+          &__text {
+            width: 46.5rem;
+            padding: 7.8rem 4.8rem 8.5rem;
+            background-color: #F4F3EE;
+          }
+        }
+      }
+    }
+  }
+
+  &-brands {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2rem;
+    align-items: center;
+    margin-bottom: 7.2rem;
+
+    &-head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4.8rem;
+    }
+
+    &__title {
+      font-size: 6.4rem;
+      font-weight: $f-b;
+      color: #8A817C;
+      max-width: 54.5rem;
+
+      &_dark {
+        color: #463F3A;
+        font-size: 7rem;
+      }
+    }
+
+    &__description {
+      font-size: 1.8rem;
+      font-weight: $f-l;
+      color: #56575B;
+      line-height: 158.7%;
+      text-align: justify;
+    }
+
+    &-img {
+      width: 75.7rem;
+      height: 45.3rem;
+
+      &__img {
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
