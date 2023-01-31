@@ -3,11 +3,18 @@
 .product {
   padding-top: 17.8rem;
 
+  @include breakpoint($xl-bp) {
+    padding-top: 9.4rem;
+  }
+
   &-head {
     background-color: #F4F3EE;
     height: 50rem;
+    position: relative;
+    padding-left: 73rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     &-container {
       max-width: 130.5rem;
@@ -16,9 +23,11 @@
     }
 
     &-img {
-      width: 73rem;
+      width: 49.3rem;
       height: 54.2rem;
-      transform: translateY(-7.7rem);
+      position: absolute;
+      top: -4.2rem;
+      left: 11.6rem;
 
       &__img {
         object-fit: contain;
@@ -71,7 +80,7 @@
       font-family: $ff-p;
       font-weight: $f-b;
       color: rgba(70, 63, 58, 1);
-      min-width: 33.2rem;
+      width: 33.2rem;
       transition: .3s;
 
       &:hover {
@@ -87,6 +96,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include breakpoint($cos-bp) {
+      margin: 0 auto;
+    }
 
     &__text {
       max-width: 55rem;
@@ -121,6 +134,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
+
+    @include breakpoint($cos-bp) {
+      margin: 0 auto 7.2rem;
+    }
 
     &-img {
       width: 100%;
