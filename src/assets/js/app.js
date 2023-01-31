@@ -202,24 +202,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (document.querySelector('.main-collections')) {
-    const animList = gsap.utils.toArray('.main-collections-item');
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.main-collections',
-        start: "top 50%",
-        end: "bottom 10%",
-        toggleActions: "play none play reverse",
-      }
-    })
-    animList.forEach((item, index) => {
-      tl.from(item, {
-        opacity: 0,
-        y: '+=20rem',
-        duration: 1,
-        delay: index * 0.2,
+    if ((window.matchMedia("(min-width: 1025px)").matches)) {
+      const animList = gsap.utils.toArray('.main-collections-item');
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.main-collections',
+          start: "top 50%",
+          end: "bottom 10%",
+          toggleActions: "play none play reverse",
+        }
+      })
+      animList.forEach((item, index) => {
+        tl.from(item, {
+          opacity: 0,
+          y: '+=20rem',
+          duration: 1,
+          delay: index * 0.2,
 
-      }, 'sin')
-    })
+        }, 'sin')
+      })
+    }
   }
 
   if (document.querySelector('.main-portfolio-swiper')) {
@@ -245,23 +247,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // CATALOG
-  if (document.querySelector('.catalog-list')) {
-    const animList = gsap.utils.toArray('.catalog-list-item');
+  // if (document.querySelector('.catalog-list')) {
+  //   const animList = gsap.utils.toArray('.catalog-list-item');
 
-    animList.forEach(item => {
-      gsap.from(item, {
-        opacity: 0,
-        y: '15rem',
-        duration: 1,
-        scrollTrigger: {
-          trigger: item,
-          start: "top 90%",
-          end: "bottom 0",
-          toggleActions: "play none play reverse",
-        }
-      })
-    })
-  }
+  //   animList.forEach(item => {
+  //     gsap.from(item, {
+  //       opacity: 0,
+  //       y: '15rem',
+  //       duration: 1,
+  //       scrollTrigger: {
+  //         trigger: item,
+  //         start: "top 90%",
+  //         end: "bottom 0",
+  //         toggleActions: "play none play reverse",
+  //       }
+  //     })
+  //   })
+  // }
   //<==
 
   // WORK
@@ -284,5 +286,58 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   //<== 
+
+  // PRODUCT
+  if (document.querySelector(".product-swiper")) {
+    const swiper = new Swiper(".product-swiper", {
+      loop: true,
+      speed: 1000,
+      grabCursor: true,
+      watchSlidesProgress: true,
+      mousewheelControl: true,
+      pagination: {
+        el: '.product-swiper-pagination',
+        type: 'bullets',
+        bulletClass: 'product-swiper-pagination__bullet',
+        bulletActiveClass: '_active',
+        clickable: true,
+      },
+      on: {
+        progress: function (swiper, progress) {
+          for (var i = 0; i < swiper.slides.length; i++) {
+            var slide = swiper.slides[i];
+            var translate, innerTranslate;
+            progress = slide.progress;
+
+            if (progress > 0) {
+              translate = progress * swiper.width;
+              innerTranslate = translate * -0;
+            } else {
+              innerTranslate = Math.abs(progress * swiper.width) * -0;
+              translate = 0;
+            }
+
+            slide.querySelector("img").style.transform = `translate3d(${translate}px,0,0)`;
+
+            slide.querySelector(".product-content-img").style.transform = `translate3d(${innerTranslate}px,0,0)`;
+          }
+        },
+
+        touchStart: function (swiper) {
+          for (var i = 0; i < swiper.slides.length; i++) {
+            swiper.slides[i].querySelector("img").style.transition = "";
+          }
+        },
+
+        setTransition: function (swiper, speed) {
+          for (var i = 0; i < swiper.slides.length; i++) {
+            swiper.slides[i].querySelector(".product-content-img").style.transition = `${speed}ms`;
+            swiper.slides[i].querySelector("img").style.transition = `${speed}ms`;
+          }
+        },
+      },
+    });
+  }
+  //<==
 
 })

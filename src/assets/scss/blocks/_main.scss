@@ -357,11 +357,12 @@
         font-size: 4.8rem;
         font-weight: $f-b;
         color: #2c2e3f;
-        line-height: 9rem;
         text-transform: uppercase;
+        max-width: 26rem;
 
         @include breakpoint($xl-bp) {
           font-size: 1.8rem;
+          margin-bottom: 1.8rem;
         }
       }
 
