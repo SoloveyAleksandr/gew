@@ -302,38 +302,13 @@ document.addEventListener("DOMContentLoaded", () => {
         bulletActiveClass: '_active',
         clickable: true,
       },
-      on: {
-        progress: function (swiper, progress) {
-          for (var i = 0; i < swiper.slides.length; i++) {
-            var slide = swiper.slides[i];
-            var translate, innerTranslate;
-            progress = slide.progress;
-
-            if (progress > 0) {
-              translate = progress * swiper.width;
-              innerTranslate = translate * -0;
-            } else {
-              innerTranslate = Math.abs(progress * swiper.width) * -0;
-              translate = 0;
-            }
-
-            slide.querySelector("img").style.transform = `translate3d(${translate}px,0,0)`;
-
-            slide.querySelector(".product-content-img").style.transform = `translate3d(${innerTranslate}px,0,0)`;
-          }
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          translate: [0, 0, -400],
         },
-
-        touchStart: function (swiper) {
-          for (var i = 0; i < swiper.slides.length; i++) {
-            swiper.slides[i].querySelector("img").style.transition = "";
-          }
-        },
-
-        setTransition: function (swiper, speed) {
-          for (var i = 0; i < swiper.slides.length; i++) {
-            swiper.slides[i].querySelector(".product-content-img").style.transition = `${speed}ms`;
-            swiper.slides[i].querySelector("img").style.transition = `${speed}ms`;
-          }
+        next: {
+          translate: ['100%', 0, 0],
         },
       },
     });
