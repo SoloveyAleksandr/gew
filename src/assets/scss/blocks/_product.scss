@@ -16,6 +16,29 @@
     flex-direction: column;
     justify-content: center;
 
+    @include breakpoint($xl-bp) {
+      padding-left: 60%;
+    }
+
+    @include breakpoint($jb-bp) {
+      padding-left: 55%;
+      height: 43rem;
+    }
+
+    @include breakpoint($lb-bp) {
+      padding: 3.1rem 1.5rem 1.5rem 1.5rem;
+      justify-content: space-between;
+      height: 34rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      height: 27rem;
+    }
+
+    @include breakpoint($xs-bp) {
+      height: 23.2rem;
+    }
+
     &-container {
       max-width: 130.5rem;
       padding: 0 2.9rem;
@@ -24,10 +47,25 @@
 
     &-img {
       width: 49.3rem;
-      height: 54.2rem;
+      height: 100%;
       position: absolute;
       top: -4.2rem;
       left: 11.6rem;
+
+      @include breakpoint($xl-bp) {
+        width: 45%;
+        left: 5%;
+        top: -2.5rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        height: 75%;
+      }
+
+      @include breakpoint($xs-bp) {
+        width: 50%;
+        left: 3%;
+      }
 
       &__img {
         object-fit: contain;
@@ -43,6 +81,16 @@
       font-family: $ff-p;
       color: rgba(69, 62, 57, 1);
       margin-bottom: 8.9rem;
+
+      @include breakpoint($lb-bp) {
+        margin-bottom: 0;
+        margin-left: 60%;
+        flex: 1;
+      }
+
+      @include breakpoint($sm-bp) {
+        font-size: 1.8rem;
+      }
     }
 
     &-price {
@@ -52,11 +100,24 @@
       gap: 1.1rem;
       margin-bottom: 7.3rem;
 
+      @include breakpoint($lb-bp) {
+        margin-bottom: 3.2rem;
+        margin-left: 60%;
+      }
+
+      @include breakpoint($sm-bp) {
+        gap: 0.5rem;
+      }
+
       &__text {
         font-size: 1.8rem;
         font-weight: $f-eb;
         font-family: $ff-p;
         color: rgba(70, 63, 58, 1);
+
+        @include breakpoint($sm-bp) {
+          font-size: 1.1rem;
+        }
       }
 
       &__value {
@@ -64,6 +125,10 @@
         font-weight: $f-b;
         font-family: $ff-p;
         color: rgba(138, 129, 124, 1);
+
+        @include breakpoint($sm-bp) {
+          font-size: 1.8rem;
+        }
       }
 
       &__unit {
@@ -86,6 +151,18 @@
       &:hover {
         background-color: transparent;
       }
+
+      @include breakpoint($lb-bp) {
+        width: 100%;
+      }
+
+      @include breakpoint($sm-bp) {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+        padding: 2rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -101,6 +178,10 @@
       margin: 0 auto;
     }
 
+    @include breakpoint($xl-bp) {
+      gap: 3.2rem;
+    }
+
     &__text {
       max-width: 55rem;
       font-size: 1.8rem;
@@ -112,11 +193,19 @@
         font-weight: $f-b;
         color: rgba(70, 63, 58, 1);
       }
+
+      @include breakpoint($xl-bp) {
+        flex: 1;
+      }
     }
 
     &-img {
       width: 55.1rem;
       height: 46.2rem;
+
+      @include breakpoint($xl-bp) {
+        flex: 1;
+      }
 
       &__img {
         object-fit: contain;
