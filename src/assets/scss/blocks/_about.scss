@@ -3,6 +3,10 @@
 .about {
   padding-top: 22.7rem;
 
+  @include breakpoint($xl-bp) {
+    padding-top: 10rem;
+  }
+
   &-container {
     max-width: 130.5rem;
     margin: 0 auto;
@@ -15,11 +19,20 @@
     gap: 5.7rem;
     margin-bottom: 7.2rem;
 
+    @include breakpoint($jb-bp) {
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
     &__title {
       padding-left: 3.5rem;
       font-size: 7.2rem;
       font-weight: $f-b;
       color: #463F3A;
+
+      @include breakpoint($jb-bp) {
+        font-size: 4.6rem;
+      }
     }
 
     &-info {
@@ -28,9 +41,26 @@
       justify-content: space-between;
       gap: 10.6rem;
 
+      @include breakpoint($xl-bp) {
+        gap: 4rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        flex-direction: column;
+      }
+
       &-img {
         width: 78.2rem;
         height: 50rem;
+
+        @include breakpoint($xl-bp) {
+          width: 50%;
+        }
+
+        @include breakpoint($lb-bp) {
+          width: 100%;
+          height: 40rem;
+        }
 
         &__img {
           object-fit: cover;
@@ -46,6 +76,10 @@
         font-weight: $f-l;
         color: #463F3A;
         line-height: 158.7%;
+
+        @include breakpoint($sm-bp) {
+          font-size: 1.6rem;
+        }
 
         &_bold {
           font-weight: $f-s;
@@ -65,6 +99,15 @@
     position: relative;
     margin-bottom: 8.8rem;
 
+    @include breakpoint($xl-bp) {
+      height: unset;
+      flex-direction: column;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 4rem;
+    }
+
     &-text {
       padding: 8.1rem 18.4rem 8.1rem 4.6rem;
       background-color: #F4F3EE;
@@ -75,6 +118,17 @@
       color: #463F3A;
       text-align: justify;
       line-height: 158.7%;
+
+      @include breakpoint($xl-bp) {
+        padding: 4rem;
+        min-height: unset;
+        width: 100%;
+      }
+
+      @include breakpoint($sm-bp) {
+        font-size: 1.6rem;
+        padding: 4rem 2rem;
+      }
 
       &_bold {
         font-weight: $f-s;
@@ -91,6 +145,23 @@
       right: 0;
       bottom: 0;
 
+      @include breakpoint($xl-bp) {
+        position: static;
+        width: 100%;
+      }
+
+      @include breakpoint($jb-bp) {
+        height: 50rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        height: 40rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 30rem;
+      }
+
       &__img {
         object-fit: cover;
         object-position: center center;
@@ -106,10 +177,24 @@
     justify-content: space-between;
     margin-bottom: 7.2rem;
 
+    @include breakpoint($xl-bp) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 4rem;
+    }
+
     &-col {
       display: flex;
       flex-direction: column;
       gap: 7.2rem;
+
+      @include breakpoint($xl-bp) {
+        width: 100%;
+        gap: 4rem;
+      }
 
       &-img {
         &__img {
@@ -127,6 +212,10 @@
         line-height: 158.7%;
         text-align: justify;
 
+        @include breakpoint($sm-bp) {
+          font-size: 1.6rem;
+        }
+
         &_bold {
           font-weight: $f-s;
           font-size: inherit;
@@ -142,10 +231,31 @@
           &-img {
             width: 66.4rem;
             height: 43.4rem;
+
+            @include breakpoint($xl-bp) {
+              width: 100%;
+              height: 60rem;
+            }
+
+            @include breakpoint($jb-bp) {
+              height: 50rem;
+            }
+
+            @include breakpoint($lb-bp) {
+              height: 40rem;
+            }
+
+            @include breakpoint($sm-bp) {
+              height: 30rem;
+            }
           }
 
           &__text {
             max-width: 49rem;
+
+            @include breakpoint($xl-bp) {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -153,16 +263,45 @@
       &-2 {
         align-items: flex-start;
 
+        @include breakpoint($xl-bp) {
+          gap: 0rem;
+        }
+
         .about-light-col {
           &-img {
             width: 45.8rem;
             height: 63.3rem;
+
+            @include breakpoint($xl-bp) {
+              width: 100%;
+            }
+
+            @include breakpoint($jb-bp) {
+              height: 50rem;
+            }
+
+            @include breakpoint($lb-bp) {
+              height: 40rem;
+            }
+
+            @include breakpoint($sm-bp) {
+              height: 30rem;
+            }
           }
 
           &__text {
             width: 46.5rem;
             padding: 7.8rem 4.8rem 8.5rem;
             background-color: #F4F3EE;
+
+            @include breakpoint($xl-bp) {
+              width: 100%;
+              padding: 4rem;
+            }
+
+            @include breakpoint($sm-bp) {
+              padding: 4rem 2rem;
+            }
           }
         }
       }
@@ -176,12 +315,28 @@
     align-items: center;
     margin-bottom: 7.2rem;
 
+    @include breakpoint($jb-bp) {
+      gap: 4rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 4rem;
+    }
+
     &-head {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 4.8rem;
+
+      @include breakpoint($lb-bp) {
+        flex-direction: column;
+      }
+
+      @include breakpoint($sm-bp) {
+        gap: 3rem;
+      }
     }
 
     &__title {
@@ -190,9 +345,25 @@
       color: #8A817C;
       max-width: 54.5rem;
 
+      @include breakpoint($xl-bp) {
+        font-size: 4.6rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        font-size: 4.2rem;
+      }
+
       &_dark {
         color: #463F3A;
         font-size: 7rem;
+
+        @include breakpoint($xl-bp) {
+          font-size: 4.6rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          font-size: 4.2rem;
+        }
       }
     }
 
@@ -202,17 +373,33 @@
       color: #56575B;
       line-height: 158.7%;
       text-align: justify;
+
+      @include breakpoint($sm-bp) {
+        font-size: 1.6rem;
+      }
     }
 
     &-img {
       width: 75.7rem;
       height: 45.3rem;
 
+      @include breakpoint($lb-bp) {
+        width: 100%;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 30rem;
+      }
+
       &__img {
         object-fit: cover;
         object-position: center center;
         width: 100%;
         height: 100%;
+
+        @include breakpoint($jb-bp) {
+          object-fit: contain;
+        }
       }
     }
   }
