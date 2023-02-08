@@ -315,4 +315,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   //<==
 
+  //MENU
+  if (document.querySelector(".menu")) {
+    class Menu {
+      constructor(btn) {
+        this.menu = document.querySelector(".menu");
+        this.btn = document.querySelector(btn);
+
+        if (this.menu && this.btn) {
+          this.init();
+        }
+      }
+
+      init() {
+        this.btn.addEventListener("click", this.handleClick.bind(this));
+      }
+
+      handleClick() {
+        this.menu.classList.toggle("_active");
+      }
+    }
+
+    new Menu(".header-btn");
+  }
+  //<==
+
 })

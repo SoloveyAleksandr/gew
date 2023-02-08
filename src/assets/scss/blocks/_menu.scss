@@ -1,0 +1,39 @@
+.menu {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 12.3rem 3.9rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: .5s;
+
+  &._active {
+    left: 0;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    &__link {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      font-weight: $f-b;
+      text-transform: uppercase;
+    }
+  }
+
+  &__legal {
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: $ff-p;
+  }
+}
