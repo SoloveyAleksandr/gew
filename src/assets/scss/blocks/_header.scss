@@ -1,9 +1,8 @@
 .header {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
   padding-top: 3.1rem;
-  background-color: #fff;
 
   @include breakpoint($xl-bp) {
     padding-top: 0.9rem;
@@ -14,6 +13,7 @@
     top: 0;
     left: 0;
     padding-bottom: 0.5rem;
+    background-color: #fff;
   }
 
   &-container {
