@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="">
+  <title>DEFAULT</title>
+  
+  
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  
+  <link rel="stylesheet" href="assets/css/style.min.css"></head>
+
+<body>
+  <svg style="display: none;">
+  
+    <symbol id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
+      <g>
+        <path d="M373.597,29.736c-0.938,0-1.856,0.009-2.795,0.03C313.675,30.864,276.726,59.028,256,93.182
+  		c-20.726-34.154-57.675-62.318-114.802-63.416c-0.928-0.021-1.866-0.03-2.796-0.03c-38.566,0-73.559,15.465-98.518,43.538
+  		C13.797,102.626,0,143.789,0,192.309c0,95.273,76.404,153.378,150.284,209.566c28.513,21.684,57.975,44.098,83.483,68.688
+  		l1.138,1.547c5.062,6.24,12.419,9.904,20.296,10.134l0.8,0.02l0.838-0.02c7.847-0.24,15.186-3.894,20.247-10.114l1.158-1.578
+  		c25.498-24.59,54.97-47.003,83.473-68.678C435.596,345.687,512,287.583,512,192.309C512,96.586,455.083,29.736,373.597,29.736z
+  		 M371.391,357.748c-37.12,28.952-78.172,57.866-113.654,92.099c-0.689,0.668-1.248,1.238-1.747,1.777
+  		c-0.519-0.549-1.018-1.088-1.726-1.777c-47.303-45.615-104.52-81.895-149.116-121.202c-22.313-19.618-41.412-39.904-54.79-62.088
+  		c-13.378-22.204-21.184-46.164-21.215-74.248c0.02-44.228,12.81-77.493,32.528-99.677c19.757-22.164,46.573-33.705,76.733-33.764
+  		l2.237,0.03c33.775,0.708,57.835,12.67,75.017,29.681c17.132,17.022,27.165,39.556,30.77,60.99
+  		c0.788,4.682,4.821,8.097,9.574,8.097c4.752,0,8.785-3.414,9.574-8.097c3.604-21.434,13.638-43.967,30.77-60.99
+  		c17.181-17.012,41.242-28.973,75.017-29.681l2.236-0.03c30.161,0.059,56.976,11.6,76.735,33.764
+  		c19.717,22.184,32.507,55.449,32.526,99.677c-0.03,28.084-7.837,52.044-21.215,74.248
+  		C441.605,299.833,408.54,328.815,371.391,357.748z" />
+      </g>
+    </symbol>
+  
+    <!-- <symbol id="search-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="9" cy="9" r="8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M19.0004 19.0004L14.6504 14.6504" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol> -->
+  
+    <symbol id="search-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M3.70247 10.7661C3.70247 6.85717 6.87126 3.68839 10.7802 3.68839C14.6891 3.68839 17.8578 6.85717 17.8578 10.7661C17.8578 14.675 14.6891 17.8438 10.7802 17.8438C6.87126 17.8438 3.70247 14.675 3.70247 10.7661ZM10.7802 1.98592C5.93101 1.98592 2 5.91693 2 10.7661C2 15.6152 5.93101 19.5462 10.7802 19.5462C13.0537 19.5462 15.1253 18.6821 16.6847 17.2645L20.5468 21.1266C20.8793 21.459 21.4182 21.459 21.7507 21.1266C22.0831 20.7942 22.0831 20.2552 21.7507 19.9228L17.8294 16.0015C18.9168 14.5397 19.5603 12.728 19.5603 10.7661C19.5603 5.91693 15.6293 1.98592 10.7802 1.98592Z" />
+    </symbol>
+  
+    <symbol id="btn-arrow-icon" viewBox="0 0 54 11" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M49.5975 0.218756L53.6831 4.97188C53.9338 5.26355 53.9338 5.73645 53.6831 6.02812L49.5975 10.7812C49.3468 11.0729 48.9403 11.0729 48.6896 10.7812C48.4389 10.4896 48.4389 10.0167 48.6896 9.725L51.6792 6.24688L1.51308 6.65937C1.15852 6.65937 0.871094 6.32498 0.871094 5.91249C0.871094 5.5 1.15852 5.16561 1.51308 5.16561L51.6792 4.75312L48.6896 1.27501C48.4389 0.98333 48.4389 0.510431 48.6896 0.218756C48.9403 -0.0729188 49.3468 -0.0729188 49.5975 0.218756Z" />
+    </symbol>
+  
+    <symbol id="facebook-icon" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12 1H9C6.23858 1 4 3.23858 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.44772 8.44771 5 9 5H12V1Z" stroke-width="2"
+          stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </symbol>
+  
+    <symbol id="twitter-icon" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M23 2.0005C22.0424 2.67597 20.9821 3.19261 19.86 3.5305C18.6264 2.11203 16.6384 1.61461 14.8821 2.28495C13.1258 2.95529 11.9748 4.6508 12 6.5305V7.5305C8.43067 7.62305 5.05203 5.92247 3 3.0005C3 3.0005 -1 12.0005 8 16.0005C5.94053 17.3985 3.48716 18.0994 1 18.0005C10 23.0005 21 18.0005 21 6.5005C20.9991 6.22195 20.9723 5.94409 20.92 5.6705C21.9406 4.66399 22.6608 3.39321 23 2.0005Z"
+          stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </symbol>
+  
+    <symbol id="instagram-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <rect x="1" y="1" width="20" height="20" rx="5" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M14.9998 10.3705C15.2529 12.0775 14.3828 13.7543 12.8414 14.5302C11.3 15.306 9.43486 15.0059 8.21465 13.7856C6.99444 12.5654 6.69431 10.7003 7.47014 9.15886C8.24597 7.61746 9.92284 6.74736 11.6298 7.00048C13.3728 7.25894 14.7414 8.62751 14.9998 10.3705Z"
+          stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </symbol>
+  
+  </svg>
+  <div class="page">
+
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="#" class="menu-list__link">КаТАЛОГ</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#" class="menu-list__link">ГАЛЕРЕЯ</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#" class="menu-list__link">КАСТОМ</a>
+        </li>
+      </ul>
+    
+      <a href="#" class="menu__legal">
+        © 2022 Lite & Light
+      </a>
+    </nav>
+    <div class="loader">
+    
+      <svg class="loader-img" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="loader-img-path loader-img-path_1"
+          d="M13.9707 5.07149V6.37149H17.1993H20.4278V9.91434V13.4572H21.7278H23.0278V8.61434V3.77148H18.4993H13.9707V5.07149Z"
+          fill="white" />
+        <path class="loader-img-path loader-img-path_2"
+          d="M12.7566 9.01439C12.0566 9.14296 11.5966 9.35439 11.2109 9.72296C10.7709 10.1373 10.5423 10.6944 10.5423 11.343C10.5423 11.9887 10.7509 12.523 11.1623 12.9401C11.2937 13.0715 11.3994 13.183 11.3994 13.1858C11.3994 13.1887 11.3194 13.2458 11.2194 13.3087C10.9852 13.4601 10.6652 13.7972 10.5194 14.0458C10.168 14.6401 10.0966 15.343 10.3166 16.0144C10.6223 16.9344 11.3423 17.5372 12.4852 17.823C12.7652 17.8915 12.8309 17.8972 13.4423 17.9001C14.1823 17.9001 14.3537 17.8744 14.8909 17.6858C15.7137 17.3972 16.3052 16.8401 16.5966 16.0858C16.728 15.7458 16.7737 15.4658 16.7909 14.8915L16.808 14.3715H17.3166H17.828V13.3715V12.3715H17.3137H16.7994V11.843V11.3144H15.6566H14.5137V11.8458V12.3773L13.9652 12.3658C13.4366 12.3573 13.408 12.3544 13.2509 12.2801C12.9594 12.1458 12.8137 11.8401 12.8823 11.5087C12.9452 11.2087 13.1366 11.0144 13.4337 10.9401C13.5766 10.9087 14.0823 10.9173 14.2137 10.9573C14.268 10.9744 14.2909 10.9173 14.5194 10.123C14.6566 9.65439 14.7766 9.2401 14.7852 9.19725C14.8023 9.12582 14.7994 9.12582 14.5366 9.07725C13.9052 8.96296 13.1709 8.93725 12.7566 9.01439ZM14.508 14.7915C14.4994 15.1915 14.4966 15.2201 14.4223 15.3487C14.2652 15.6144 14.0137 15.7601 13.6309 15.8001C13.288 15.8372 12.9337 15.7401 12.7366 15.5515C12.4737 15.3001 12.4794 14.8115 12.7452 14.5887C12.9623 14.4058 13.108 14.3772 13.8937 14.3744L14.5194 14.3715L14.508 14.7915Z"
+          fill="white" />
+        <path class="loader-img-path loader-img-path_3"
+          d="M5 18.2856V23.1142H9.51429H14.0286V21.8142V20.5142H10.8143H7.6V16.9856V13.457H6.3H5V18.2856Z" fill="white" />
+      </svg>
+    
+    
+    </div>
+    <header class="header">
+      <div class="header-container">
+    
+        <button class="header-btn">
+          <span class="header-btn-burger"></span>
+        </button>
+    
+        <div class="header-menu">
+          <a href="#" class="header-logo">
+            <img class="header-logo__img" src="assets/images/header-logo.png" alt="logo">
+          </a>
+    
+          <a href="#" class="header-link">КАТАЛОГ</a>
+    
+          <a href="#" class="header-link">ГАЛЕРЕЯ</a>
+    
+          <a href="#" class="header-link header-link_btn">КАСТОМ</a>
+        </div>
+    
+        <div class="header-search-wrapper">
+          <div class="header-search-inner">
+            <input class="header-search__input" type="text" placeholder="Поиск">
+    
+            <button class="header-search-btn header-search-btn__search" type="button">
+              <svg class="header-search__icon">
+                <use href="#search-icon"></use>
+              </svg>
+            </button>
+          </div>
+    
+          <button class="header-search-btn header-search-btn__heart" type="button">
+            <svg class="header-search__icon-heart">
+              <use href="#heart-icon"></use>
+            </svg>
+          </button>
+        </div>
+    
+      </div>
+    </header>
+    <section class="main">
+    
+      <div class="main-swiper-bg">
+        <div class="main-swiper-conteiner">
+          <div class="main-info">
+            <h2 class="main-title">
+              Больше, <br>
+              чем просто <br>
+              свет <br>
+            </h2>
+    
+            <h5 class="main-subtitle">
+              От идеи до воплощения
+            </h5>
+    
+            <a href="#" class="main-btn main__btn">
+              ПЕРЕЙТИ В КАТАЛОГ
+              <svg class="main-btn__icon">
+                <use href="#btn-arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+    
+          <div class="swiper main-swiper">
+            <div class="swiper-wrapper main-swiper-wrapper">
+              <div class="swiper-slide main-swiper-slide">
+                <a href="#" class="main-swiper-slide-img">
+                  <img class="main-swiper-slide-img__img" src="assets/images/main-greet-img-1.png" alt="main-greet">
+                </a>
+              </div>
+    
+              <div class="swiper-slide main-swiper-slide">
+                <a href="#" class="main-swiper-slide-img">
+                  <img class="main-swiper-slide-img__img" src="assets/images/main-greet-img-2.png" alt="main-greet">
+                </a>
+              </div>
+    
+              <div class="swiper-slide main-swiper-slide">
+                <a href="#" class="main-swiper-slide-img">
+                  <img class="main-swiper-slide-img__img" src="assets/images/main-greet-img-3.png" alt="main-greet">
+                </a>
+              </div>
+    
+              <div class="swiper-slide main-swiper-slide">
+                <a href="#" class="main-swiper-slide-img">
+                  <img class="main-swiper-slide-img__img" src="assets/images/main-greet-img-4.png" alt="main-greet">
+                </a>
+              </div>
+    
+              <div class="swiper-slide main-swiper-slide">
+                <a href="#" class="main-swiper-slide-img">
+                  <img class="main-swiper-slide-img__img" src="assets/images/main-greet-img-5.png" alt="main-greet">
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="main-swiper-pagination">
+            <div class="main-swiper-pagination-titles">
+              <h4 class="main-swiper-pagination__title _active">
+                Fedora
+              </h4>
+              <h4 class="main-swiper-pagination__title">
+                Hoops
+              </h4>
+              <h4 class="main-swiper-pagination__title">
+                Algorithm
+              </h4>
+              <h4 class="main-swiper-pagination__title">
+                U-light Wall
+              </h4>
+              <h4 class="main-swiper-pagination__title">
+                Wireflow Chandlier
+              </h4>
+            </div>
+    
+            <div class="main-swiper-pagination-btns">
+              <button class="main-swiper-pagination-btn _active" type="button" data-title="Fedora">
+                1
+              </button>
+              <button class="main-swiper-pagination-btn" type="button" data-title="Hoops">
+                2
+              </button>
+              <button class="main-swiper-pagination-btn" type="button" data-title="Algorithm">
+                3
+              </button>
+              <button class="main-swiper-pagination-btn" type="button" data-title="U-light Wall">
+                4
+              </button>
+              <button class="main-swiper-pagination-btn" type="button" data-title="Wireflow Chandlier">
+                5
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="main-collections">
+        <div class="main-collections-item">
+          <h3 class="main-collections-item-title">
+            Коллекции
+            Избранные
+          </h3>
+        </div>
+    
+        <a href="#" class="main-collections-item">
+          <div class="main-collections-item-bg"></div>
+    
+          <div class="main-collections-item-img">
+            <img src="assets/images/collection-6.png" alt="collection" class="main-collections-item-img__img">
+          </div>
+    
+          <p class="main-collections-item-name">
+            Duo
+          </p>
+        </a>
+    
+        <a href="#" class="main-collections-item">
+          <div class="main-collections-item-bg"></div>
+    
+          <div class="main-collections-item-img">
+            <img src="assets/images/collection-2.png" alt="collection" class="main-collections-item-img__img">
+          </div>
+    
+          <p class="main-collections-item-name">
+            Shade Pendant
+          </p>
+        </a>
+    
+        <a href="#" class="main-collections-item">
+          <div class="main-collections-item-bg"></div>
+    
+          <div class="main-collections-item-img">
+            <img src="assets/images/collection-4.png" alt="collection" class="main-collections-item-img__img">
+          </div>
+    
+          <p class="main-collections-item-name">
+            Link
+          </p>
+        </a>
+    
+        <a href="#" class="main-collections-item">
+          <div class="main-collections-item-bg"></div>
+    
+          <div class="main-collections-item-img">
+            <img src="assets/images/collection-1.png" alt="collection" class="main-collections-item-img__img">
+          </div>
+    
+          <p class="main-collections-item-name">
+            Shade Square
+          </p>
+        </a>
+    
+        <a href="#" class="main-collections-item">
+          <div class="main-collections-item-bg"></div>
+    
+          <div class="main-collections-item-img">
+            <img src="assets/images/collection-3.png" alt="collection" class="main-collections-item-img__img">
+          </div>
+    
+          <p class="main-collections-item-name">
+            Trom
+          </p>
+        </a>
+    
+        <a href="#" class="main-collections-item">
+          <div class="main-collections-item-bg"></div>
+    
+          <div class="main-collections-item-img">
+            <img src="assets/images/collection-5.png" alt="collection" class="main-collections-item-img__img">
+          </div>
+    
+          <p class="main-collections-item-name">
+            Algorithm
+          </p>
+        </a>
+      </div>
+    
+      <div class="main-colors">
+        <h3 class="main-colors-title">
+          Типы дизайнерского света
+        </h3>
+    
+        <div class="main-colors-container">
+          <div class="main-colors-item">
+            <div class="main-colors-item-img">
+              <img src="assets/images/color-type-1.png" alt="color" class="main-colors-item-img__img">
+            </div>
+    
+            <div class="main-colors-inner">
+              <h4 class="main-colors-item-title">
+                Классика
+              </h4>
+    
+              <p class="main-colors-item-description">
+                Готовые <br>
+                решения
+              </p>
+    
+              <a href="#" class="main-btn main-colors-item-link">
+                ПЕРЕЙТИ В КАТАЛОГ
+                <svg class="main-btn__icon">
+                  <use href="#btn-arrow-icon"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <div class="main-colors-item">
+            <div class="main-colors-item-img">
+              <img src="assets/images/color-type-2.png" alt="color" class="main-colors-item-img__img">
+            </div>
+    
+            <div class="main-colors-inner">
+              <h4 class="main-colors-item-title">
+                Кастом
+              </h4>
+    
+              <p class="main-colors-item-description">
+                Индивидуальные <br>
+                решения
+              </p>
+    
+              <a href="#" class="main-btn main-colors-item-link">
+                ПЕРЕЙТИ В КАТАЛОГ
+                <svg class="main-btn__icon">
+                  <use href="#btn-arrow-icon"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="main-portfolio">
+        <h3 class="main-portfolio-title">
+          НАШИ РАБОТЫ
+        </h3>
+    
+        <div class="swiper main-portfolio-swiper">
+          <div class="swiper-wrapper main-portfolio-swiper-wrapper">
+            <a href="#" class="swiper-slide main-portfolio-swiper-slide">
+              <img src="assets/images/main-gallery-1.jpg" alt="portfolio" class="main-portfolio-swiper-slide__img">
+            </a>
+    
+            <a href="#" class="swiper-slide main-portfolio-swiper-slide">
+              <img src="assets/images/main-gallery-2.jpg" alt="portfolio" class="main-portfolio-swiper-slide__img">
+            </a>
+    
+            <a href="#" class="swiper-slide main-portfolio-swiper-slide">
+              <img src="assets/images/main-gallery-3.jpg" alt="portfolio" class="main-portfolio-swiper-slide__img">
+            </a>
+          </div>
+        </div>
+    
+        <div class="main-portfolio-pagination">
+    
+        </div>
+      </div>
+    
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+    
+        <div class="footer-nav">
+          <div class="footer-nav-item">
+            <a href="#" class="footer-nav__link footer-nav__link_bold footer-nav__link_big">Каталог</a>
+          </div>
+    
+          <div class="footer-nav-item">
+            <a href="#" class="footer-nav__link footer-nav__link_bold footer-nav__link_big">Галерея</a>
+            <a href="#" class="footer-nav__link">Посольтво РБ в Казахстане</a>
+            <a href="#" class="footer-nav__link">Офит IT-компании</a>
+            <a href="#" class="footer-nav__link">Офис производственной компании</a>
+            <a href="#" class="footer-nav__link">Офис Бизнес Авиации</a>
+            <a href="#" class="footer-nav__link">Офис военно-промышленного предприятия</a>
+          </div>
+    
+          <div class="footer-nav-item">
+            <a href="#" class="footer-nav__link footer-nav__link_bold footer-nav__link_big">О нас</a>
+            <a href="#" class="footer-nav__link">История</a>
+            <a href="#" class="footer-nav__link">Идeoлогия</a>
+            <a href="#" class="footer-nav__link">Бренды</a>
+          </div>
+    
+          <div class="footer-nav-item">
+            <p class="footer-nav__link footer-nav__link_bold footer-nav__link_big">Контакты</p>
+            <p class="footer-nav__link footer-nav__link_bold">Минск</p>
+            <p class="footer-nav__link">пр. Победителей 125</p>
+            <a href="tel:+375293758729" class="footer-nav__link">+375 (29) 375-87-29</a>
+            <a href="tel:+375296818179" class="footer-nav__link">+375 (29) 681-81-79</a>
+          </div>
+    
+          <div class="footer-nav-item">
+            <a href="#" class="footer-nav-logo">
+              <img src="assets/images/logo big.png" alt="logo" class="footer-nav-logo__img">
+            </a>
+          </div>
+        </div>
+    
+        <div class="footer-legal">
+          <p class="footer-legal__text">
+            © 2022 Lite & Light
+          </p>
+    
+          <div class="footer-legal-icons">
+            <a href="#" class="footer-legal-link">
+              <svg class="footer-legal-link__icon">
+                <use href="#facebook-icon"></use>
+              </svg>
+            </a>
+    
+            <a href="#" class="footer-legal-link">
+              <svg class="footer-legal-link__icon">
+                <use href="#twitter-icon"></use>
+              </svg>
+            </a>
+    
+            <a href="#" class="footer-legal-link">
+              <svg class="footer-legal-link__icon">
+                <use href="#instagram-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+    
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
