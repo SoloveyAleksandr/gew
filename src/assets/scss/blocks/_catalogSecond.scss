@@ -1,0 +1,403 @@
+@import "../vars";
+
+.catalogSecond {
+  padding-top: 19rem;
+
+  @include breakpoint($xl-bp) {
+    padding-top: 7.8rem;
+  }
+
+  &-title {
+    font-size: 4.8rem;
+    font-weight: $f-b;
+    color: #463F3A;
+    margin-bottom: 3.9rem;
+    text-transform: uppercase;
+
+    @include breakpoint($xl-bp) {
+      font-size: 1.8rem;
+      margin-bottom: 3.1rem;
+    }
+  }
+
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    row-gap: 6.1rem;
+    margin-bottom: 7.2rem;
+
+    @include breakpoint($xl-bp) {
+      gap: 0.6rem;
+      row-gap: 1.8rem;
+      margin-bottom: 6.4rem;
+    }
+
+    @include breakpoint($jb-bp) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+
+      &-img {
+        width: 100%;
+        height: 55rem;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        transition: .3s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        @include breakpoint($cos-bp) {
+          height: 45rem;
+        }
+
+        @include breakpoint($xl-bp) {
+          height: 35rem;
+          margin-bottom: 0.8rem;
+        }
+
+        @include breakpoint($lb-bp) {
+          height: 30rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          height: 24.8rem;
+        }
+
+        &__img {
+          object-fit: cover;
+          object-position: center center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__title {
+        font-size: 1.6rem;
+        font-weight: $f-m;
+        font-family: $ff-p;
+        line-height: 104%;
+
+        @include breakpoint($xl-bp) {
+          font-size: 1.1rem;
+        }
+      }
+
+      &__description {
+        font-size: 1.6rem;
+        font-weight: $f-r;
+        line-height: 128%;
+
+        @include breakpoint($xl-bp) {
+          font-size: 1.1rem;
+          line-height: 134%;
+        }
+      }
+    }
+  }
+
+  li {
+    height: 43rem;
+    position: relative;
+    
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .catalog-list__title {
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      text-align: center;
+      letter-spacing: -0.415px;
+      color: #000000;
+      background: #FFFFFF;
+      position: absolute;
+    }
+
+    .catalog-list__containerHelper {
+      position: absolute;
+    }
+
+    .catalog-list__imgContainer {
+      position: absolute;
+      transition: transform 0.2s linear;
+    }
+  }
+
+  li:hover {
+    .catalog-list__imgContainer {
+      transform: translateY(1rem);
+      transition: transform 0.2s linear;
+    }
+  }
+
+  .catalog-list__container1 {
+    
+    
+
+    .catalog-list__containerHelper {
+      background: #F2F2F4;
+      height: 33.2rem;
+      width: 100%;
+    }
+
+    .catalog-list__title {
+      padding: 0.8rem 4.1rem 0.7rem 3.9rem;
+    }
+
+    .catalog-list__imgContainer {
+      width: 94%;
+      position: absolute;
+      top: 11rem;
+      left: 1rem;
+    }
+  }
+
+  .catalog-list__container2 {
+    .catalog-list__containerHelper {
+      background: #F4F3EE;
+      height: 100%;
+      width: 33.26rem;
+      position: absolute;
+      right: -2.5rem;
+    }
+
+    .catalog-list__title {
+      padding: 0.9rem 1.1rem 0.9rem 1.8rem;
+      right: 0;
+      bottom: 0;
+    }
+
+    .catalog-list__imgContainer {
+      width: 110%;
+      position: absolute;
+      left: -15rem;
+    }
+  }
+
+  .catalog-list__container3 {
+
+    .catalog-list__containerHelper {
+      background: #BCB8B1;
+      width: 36.1rem;
+      height: 37.3rem;
+      right: 1.9rem;
+      top: 2.8rem;
+    }
+
+    .catalog-list__title {
+      padding: 0.8rem 5.3rem 0.7rem 5.3rem;
+      left: 0;
+      bottom: 0;
+    }
+
+    .catalog-list__imgContainer {
+      top: 8.4rem;
+      width: 139%;
+    }
+  }
+
+  .catalog-list__container4 {
+
+    .catalog-list__containerHelper {
+      background: #FFEDDB;
+      width: 47rem;
+      height: 35.7rem;
+      top: 2.2rem;
+      left: -0.3rem;
+    }
+
+    .catalog-list__title {
+      padding: 0.4rem 5.9rem 0.4rem 5.9rem;
+      right: 0;
+      
+    }
+
+    .catalog-list__imgContainer {
+      left: 3rem;
+    }
+  }
+
+  .catalog-list__container5 {
+
+    .catalog-list__containerHelper {
+      background: #E0AFA0;
+      width: 42.3rem;
+      height: 30.9rem;   
+      right: 1.7rem;
+      top: 5.3rem;
+    }
+
+    .catalog-list__title {
+      padding: 1rem 5.2rem 0.4rem 4.5rem;
+    }
+
+    .catalog-list__imgContainer {
+      width: 98%;
+      right: -4.2rem;
+    }
+  }
+
+  .catalog-list__container6 {
+
+    .catalog-list__containerHelper {
+      background: #F2F2F4;
+      width: 37.4rem;
+      height: 34.8rem;
+      right: 2rem;
+      top: 6rem;
+    }
+
+    .catalog-list__title {
+      padding: 1rem 4.7rem 0.4rem 4.6rem;
+      right: 0;
+      bottom: 0;
+    }
+
+    .catalog-list__imgContainer {
+      width: 180.5%;
+      left: -13.9rem;
+      top: -2.7rem;
+    }
+  }
+
+  .catalog-list__container7 {
+    height: 71.5rem;
+
+    .catalog-list__containerHelper {
+      background: #D9D9D9;
+      width: 25.6rem;
+      height: 65.6rem;
+      left: -0.4rem;
+      top: 6rem;
+    }
+
+    .catalog-list__title {
+      padding: 1.2rem 1.1rem 0.4rem 1.2rem;
+      left: 0;
+      bottom: 0;
+      width: 70%;
+      text-align: start;
+    }
+
+    .catalog-list__imgContainer {
+      right: -13.1rem;
+      width: 99%;
+    }
+  }
+
+  .catalog-list__container8 {
+    grid-column: 2 / 4;
+    height: 61.5rem;
+
+    .catalog-list__containerHelper {
+      background-color: #463f3a;
+      width: 102.9rem;
+      height: 100%;
+      left: -5.7rem;
+      top: 6.1rem;
+      // width: 25.6rem;
+      // height: 65.6rem;
+      // left: -0.4rem;
+      // top: 6rem;
+    }
+
+    .catalog-list__title {
+      padding: 0.8rem 8rem 0.8rem 8rem;
+      right: 0;
+      top: 0;
+      z-index: 11;
+
+    }
+
+    .catalog-list__imgContainer {
+      right: 0.9rem;
+      top: 0.8rem;
+      width: 99%;
+      height: 95%;
+      mix-blend-mode: screen;
+    }
+  }
+
+  .catalog-list__container9 {
+    height: 75rem;
+
+    .catalog-list__containerHelper {
+      background: #FFEDDB;
+      width: 46.7rem;
+      height: 33.8rem;
+      left: -0.4rem;
+      top: 7rem;
+    }
+
+    .catalog-list__title {
+      padding: 0.8rem 8rem 0.8rem 8rem;
+      right: 0;
+      top: 0;
+      z-index: 11;
+
+    }
+
+    .catalog-list__imgContainer {
+      left: 5.9rem;
+      width: 79.9%;
+    }
+  }
+
+  .catalog-list__container10 {
+    height: 45rem;
+
+    .catalog-list__containerHelper {
+      background: #D9D9D9;
+      width: 39rem;
+      height: 33.7rem;
+      right: 4.8rem;
+      top: -0.5rem;
+    }
+
+    .catalog-list__title {
+      padding: 0.9rem 3rem 0.5rem 4rem;
+      right: 0;
+      top: 0;
+    }
+
+    .catalog-list__imgContainer {
+      top: 9.7rem;
+      left: 5rem;
+      width: 44%;
+    }
+  }
+
+  .catalog-list__container11 {
+    height: 45rem;
+
+    .catalog-list__containerHelper {
+      background: #8A3434;
+      width: 46.6rem;
+      height: 34rem;
+      right: 1.6rem;
+      top: 1rem;
+    }
+
+    .catalog-list__title {
+      padding: 0.6rem 4.7rem 0.7rem 4.4rem;
+      left: 0;
+      top: 0;
+    }
+
+    .catalog-list__imgContainer {
+      top: 5.3rem;
+      left: 15.5rem;
+      width: 58%;
+    }
+  }
+}

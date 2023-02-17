@@ -4226,3 +4226,133 @@ svg {
         height: 0.72rem;
     }
 }
+
+.catalogSecond {
+    padding-top: 19rem;
+}
+
+@media (max-width: 1024px) {
+    .catalogSecond {
+        padding-top: 7.8rem;
+    }
+}
+
+.catalogSecond-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #463F3A;
+    margin-bottom: 3.9rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .catalogSecond-title {
+        font-size: 1.8rem;
+        margin-bottom: 3.1rem;
+    }
+}
+
+.catalogSecond-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+    row-gap: 6.1rem;
+    margin-bottom: 7.2rem;
+}
+
+@media (max-width: 1024px) {
+    .catalogSecond-list {
+        gap: 0.6rem;
+        row-gap: 1.8rem;
+        margin-bottom: 6.4rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .catalogSecond-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.catalogSecond-list-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.catalogSecond-list-item-img {
+    width: 100%;
+    height: 55rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+}
+
+.catalogSecond-list-item-img:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 1330px) {
+    .catalogSecond-list-item-img {
+        height: 45rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .catalogSecond-list-item-img {
+        height: 35rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .catalogSecond-list-item-img {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .catalogSecond-list-item-img {
+        height: 24.8rem;
+    }
+}
+
+.catalogSecond-list-item-img__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.catalogSecond-list-item__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 104%;
+}
+
+@media (max-width: 1024px) {
+    .catalogSecond-list-item__title {
+        font-size: 1.1rem;
+    }
+}
+
+.catalogSecond-list-item__description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 128%;
+}
+
+@media (max-width: 1024px) {
+    .catalogSecond-list-item__description {
+        font-size: 1.1rem;
+        line-height: 134%;
+    }
+}
+
+.catalogSecond .catalog-list__container1 {
+    background: #F2F2F4;
+}
