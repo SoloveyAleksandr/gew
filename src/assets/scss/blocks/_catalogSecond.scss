@@ -3,6 +3,16 @@
 .catalogSecond {
   padding-top: 19rem;
 
+  .container {
+    @include breakpoint($cos-bp) {
+      max-width: 120rem;
+    }
+
+    @include breakpoint($xl-bp) {
+      max-width: 95rem;
+    }
+  }
+
   @include breakpoint($xl-bp) {
     padding-top: 7.8rem;
   }
@@ -31,6 +41,8 @@
       gap: 0.6rem;
       row-gap: 1.8rem;
       margin-bottom: 6.4rem;
+      grid-template-columns: repeat(2, 1fr);
+      overflow: hidden;
     }
 
     @include breakpoint($jb-bp) {
@@ -104,6 +116,14 @@
   li {
     height: 43rem;
     position: relative;
+
+    @include breakpoint($lb-bp) {
+      height: 34rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      height: 21rem;
+    }
     
 
     img {
@@ -121,15 +141,29 @@
       color: #000000;
       background: #FFFFFF;
       position: absolute;
+
+      @include breakpoint($sm-bp) {
+        font-size: 1.5rem;
+      }
     }
 
     .catalog-list__containerHelper {
       position: absolute;
+
+      @include breakpoint($xl-bp) {
+        // top: 0rem !important;
+        // left: 0rem !important;
+      }
     }
 
     .catalog-list__imgContainer {
       position: absolute;
       transition: transform 0.2s linear;
+
+      @include breakpoint($xl-bp) {
+        // top: 0rem !important;
+        // left: 0rem !important;
+      }
     }
   }
 
@@ -142,12 +176,14 @@
 
   .catalog-list__container1 {
     
-    
-
     .catalog-list__containerHelper {
       background: #F2F2F4;
       height: 33.2rem;
       width: 100%;
+
+      @include breakpoint($sm-bp) {
+        height: 21rem;
+      }
     }
 
     .catalog-list__title {
@@ -166,9 +202,15 @@
     .catalog-list__containerHelper {
       background: #F4F3EE;
       height: 100%;
-      width: 33.26rem;
+      // width: 33.26rem;
+      width: 69%;
       position: absolute;
       right: -2.5rem;
+
+      @include breakpoint($xl-bp) {
+        right: 0rem;
+        width: 77%;
+      }
     }
 
     .catalog-list__title {
@@ -181,6 +223,14 @@
       width: 110%;
       position: absolute;
       left: -15rem;
+
+      @include breakpoint($xl-bp) {
+        left: -8rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        left: -5rem;
+      }
     }
   }
 
@@ -188,16 +238,35 @@
 
     .catalog-list__containerHelper {
       background: #BCB8B1;
-      width: 36.1rem;
+      // width: 36.1rem;
+      width: 74%;
       height: 37.3rem;
       right: 1.9rem;
       top: 2.8rem;
+
+      @include breakpoint($xl-bp) {
+        right: 12rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        height: 34rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 23rem;
+        right: 0;
+        left: 0;
+      }
     }
 
     .catalog-list__title {
       padding: 0.8rem 5.3rem 0.7rem 5.3rem;
       left: 0;
       bottom: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.8rem 3.3rem 0.7rem 3.3rem;
+      }
     }
 
     .catalog-list__imgContainer {
@@ -210,20 +279,50 @@
 
     .catalog-list__containerHelper {
       background: #FFEDDB;
-      width: 47rem;
+      // width: 47rem;
+      width: 96%;
       height: 35.7rem;
       top: 2.2rem;
       left: -0.3rem;
+
+      @include breakpoint($xl-bp) {
+        top: 2.2rem;
+        left: unset;
+        right: 0rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        height: 34rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 21rem;
+      }
     }
 
     .catalog-list__title {
       padding: 0.4rem 5.9rem 0.4rem 5.9rem;
       right: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.4rem 3.9rem 0.4rem 3.9rem;
+      }
+
       
     }
 
     .catalog-list__imgContainer {
       left: 3rem;
+      width: 50%;
+
+      @include breakpoint($cos-bp) {
+        width: 60%;
+      }
+
+      @include breakpoint($sm-bp) {
+        width: 60%;
+        left: 0;
+      }
     }
   }
 
@@ -231,19 +330,41 @@
 
     .catalog-list__containerHelper {
       background: #E0AFA0;
-      width: 42.3rem;
+      // width: 42.3rem;
+      width: 87%;
       height: 30.9rem;   
       right: 1.7rem;
       top: 5.3rem;
+
+      @include breakpoint($xl-bp) {
+        right: 0;
+        left: 0;
+        top: 5.3rem;
+        width: 75%;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 16.9rem;
+      }
     }
 
     .catalog-list__title {
       padding: 1rem 5.2rem 0.4rem 4.5rem;
+
+      @include breakpoint($sm-bp) {
+        z-index: 11;
+        padding: 0.6rem 3.2rem 0.4rem 3.5rem;
+      }
     }
 
     .catalog-list__imgContainer {
       width: 98%;
       right: -4.2rem;
+
+      @include breakpoint($sm-bp) {
+        top: 4rem;
+        right: -2.2rem;
+      }
     }
   }
 
@@ -251,34 +372,83 @@
 
     .catalog-list__containerHelper {
       background: #F2F2F4;
-      width: 37.4rem;
+      // width: 37.4rem;
+      width: 76.5%;
       height: 34.8rem;
       right: 2rem;
       top: 6rem;
+
+      
+      @include breakpoint($xl-bp) {
+        right: 2rem;
+        top: 21rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 18.8rem;
+        top: 6rem;
+      }
     }
 
     .catalog-list__title {
       padding: 1rem 4.7rem 0.4rem 4.6rem;
       right: 0;
       bottom: 0;
+
+
+      @include breakpoint($sm-bp) {
+        padding: 1rem 2.7rem 0.4rem 2.6rem;
+      }
+      
     }
 
     .catalog-list__imgContainer {
       width: 180.5%;
       left: -13.9rem;
       top: -2.7rem;
+
+      @include breakpoint($xl-bp) {
+        width: 154.5%;
+      left: -10.9rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        top: 1rem;
+        left: -5.9rem;
+      }
+
+      
     }
   }
 
   .catalog-list__container7 {
     height: 71.5rem;
 
+    @include breakpoint($xl-bp) {
+      grid-area: 7;
+    }
+
+    @include breakpoint($lb-bp) {
+      height: 34rem;
+    }
+
     .catalog-list__containerHelper {
       background: #D9D9D9;
-      width: 25.6rem;
+      // width: 25.6rem;
+      width: 52.4%;
       height: 65.6rem;
       left: -0.4rem;
       top: 6rem;
+
+      @include breakpoint($lb-bp) {
+        height: 34rem;
+        width: 60%;
+      }
+
+      @include breakpoint($sm-bp) {
+        width: 70%;
+        left: 0rem;
+      }
     }
 
     .catalog-list__title {
@@ -287,28 +457,59 @@
       bottom: 0;
       width: 70%;
       text-align: start;
+
+      @include breakpoint($lb-bp) {
+        width: 86%;
+      }
+
+      @include breakpoint($sm-bp) {
+        line-height: 2.6rem;
+      }
+
+
     }
 
     .catalog-list__imgContainer {
       right: -13.1rem;
       width: 99%;
+
+      @include breakpoint($sm-bp) {
+        right: -5.1rem;
+        width: 74%;
+      }
+
     }
   }
 
   .catalog-list__container8 {
     grid-column: 2 / 4;
+
+    @include breakpoint($xl-bp) {
+      grid-column: 2 span;
+    }
     height: 61.5rem;
+
+    @include breakpoint($sm-bp) {
+      height: 30.5rem;
+    }
 
     .catalog-list__containerHelper {
       background-color: #463f3a;
-      width: 102.9rem;
+      // width: 102.9rem;
+      width: 103.8%;
       height: 100%;
       left: -5.7rem;
       top: 6.1rem;
-      // width: 25.6rem;
-      // height: 65.6rem;
-      // left: -0.4rem;
-      // top: 6rem;
+
+      @include breakpoint($xl-bp) {
+        left: 0rem;
+        height: 83%;
+        width: 100%;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 89%;
+      }
     }
 
     .catalog-list__title {
@@ -316,6 +517,10 @@
       right: 0;
       top: 0;
       z-index: 11;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.8rem 3rem 0.8rem 3rem;
+      }
 
     }
 
@@ -331,12 +536,32 @@
   .catalog-list__container9 {
     height: 75rem;
 
+    @include breakpoint($lb-bp) {
+      height: 57rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      height: 50rem;
+    }
+
     .catalog-list__containerHelper {
       background: #FFEDDB;
-      width: 46.7rem;
+      // width: 46.7rem;
+      width: 96%;
       height: 33.8rem;
       left: -0.4rem;
       top: 7rem;
+
+      @include breakpoint($xl-bp) {
+        left: 1.5rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 19.8rem;
+        left: 0;
+        right: 0;
+      }
+
     }
 
     .catalog-list__title {
@@ -345,59 +570,561 @@
       top: 0;
       z-index: 11;
 
+      @include breakpoint($sm-bp) {
+        padding: 0.8rem 3rem 0.8rem 3rem;
+      }
+
     }
 
     .catalog-list__imgContainer {
       left: 5.9rem;
       width: 79.9%;
+
+      @include breakpoint($sm-bp) {
+        left: 1.9rem;
+        width: 88.9%;
+      }
     }
   }
 
   .catalog-list__container10 {
     height: 45rem;
 
+    @include breakpoint($xl-bp) {
+      grid-area: 4;
+    }
+
+    @include breakpoint($sm-bp) {
+      height: 11rem;
+    }
+
     .catalog-list__containerHelper {
       background: #D9D9D9;
-      width: 39rem;
+      // width: 39rem;
+      width: 80%;
       height: 33.7rem;
       right: 4.8rem;
       top: -0.5rem;
+
+      @include breakpoint($xl-bp) {
+        top: 3.5rem;
+        right: 8.8rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 16.7rem;
+        right: 0;
+        left: 0;
+      }
     }
 
     .catalog-list__title {
       padding: 0.9rem 3rem 0.5rem 4rem;
       right: 0;
       top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.9rem 2rem 0.5rem 2rem;
+      }
     }
 
     .catalog-list__imgContainer {
       top: 9.7rem;
       left: 5rem;
       width: 44%;
+
+      @include breakpoint($sm-bp) {
+        top: 5.7rem;
+        left: 4rem;
+      }
     }
   }
 
   .catalog-list__container11 {
     height: 45rem;
 
+    @include breakpoint($xl-bp) {
+      grid-area: 5;
+      height: 10rem;
+    }
+
     .catalog-list__containerHelper {
       background: #8A3434;
-      width: 46.6rem;
+      // width: 46.6rem;
+      width: 96.3%;
       height: 34rem;
       right: 1.6rem;
       top: 1rem;
+
+      @include breakpoint($xl-bp) {
+        top: -29rem;
+        right: -39.4rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        top: -22rem;
+        right: -26.4rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 15rem;
+        top: -8rem;
+        right: -22.4rem;
+      }
+
     }
 
     .catalog-list__title {
       padding: 0.6rem 4.7rem 0.7rem 4.4rem;
       left: 0;
       top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.6rem 3.7rem 0.7rem 3.4rem;
+      }
+
     }
 
     .catalog-list__imgContainer {
       top: 5.3rem;
       left: 15.5rem;
       width: 58%;
+
+      @include breakpoint($sm-bp) {
+        top: 2.3rem;
+        left: 8.5rem;
+      }
+
+
     }
   }
+
+  .catalog-list__container12 {
+    height: 54.1rem;
+
+    @include breakpoint($sm-bp) {
+      height: 24.1rem;
+    }
+
+    .catalog-list__containerHelper {
+      background: #F4F3EE;
+      // width: 43.2rem;
+      width: 88%;
+      height: 37.6rem;
+      top: -6.2rem;
+      left: -0.2rem;
+
+      @include breakpoint($xl-bp) {
+        top: 0rem;
+        left: 0rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 18.6rem;
+        top: -7rem;
+      }
+
+    }
+
+    .catalog-list__title {
+      padding: 0.2rem 4.7rem 0.7rem 4rem;
+      left: 0;
+      top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.2rem 1.7rem 0.7rem 1rem;
+      }
+
+
+    }
+
+    .catalog-list__imgContainer {
+      left: 1rem;
+      width: 93%;
+    }
+  }
+
+
+  .catalog-list__container13 {
+    height: 55.8rem;
+
+    @include breakpoint($sm-bp) {
+      height: 26.8rem;
+    }
+
+    .catalog-list__containerHelper {
+      background: #BCB8B1;
+      // width: 39.7rem;
+      width: 82%;
+      height: 38.2rem;
+      left: 2.2rem;
+      top: -28.1rem;
+
+
+      @include breakpoint($xl-bp) {
+        left: 4.7rem;
+        top: -14.1rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        left: 1.7rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 17.2rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+    }
+
+    .catalog-list__title {
+      padding: 0.7rem 3.7rem 1rem 4rem;
+      left: 0;
+      top: 0;
+
+
+      @include breakpoint($sm-bp) {
+        padding: 0.7rem 2.7rem 1rem 3rem;
+      }
+    }
+
+    .catalog-list__imgContainer {
+      left: 11rem;
+      top: 4.4rem;
+      width: 69%;
+
+      @include breakpoint($sm-bp) {
+        left: 9rem;
+        top: -0.6rem;
+        width: 55%;
+      }
+    }
+  }
+
+  .catalog-list__container14 {
+    height: 27.6rem;
+
+    @include breakpoint($sm-bp) {
+      height: 13.6rem;
+    }
+
+    .catalog-list__containerHelper {
+      background: #BCB8B1;
+      // width: 43.5rem;
+      width: 89%;
+      height: 24.2rem;
+      top: -26.6rem;
+      left: 3.4rem;
+
+      @include breakpoint($xl-bp) {
+        left: 0rem;
+        top: -6.6rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 12.2rem;
+      }
+    }
+
+    .catalog-list__title {
+      padding: 0.8rem 5.4rem 0.6rem 5.5rem;
+      left: 0;
+      top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.8rem 2.4rem 0.6rem 2.5rem;
+      }
+
+    }
+
+    .catalog-list__imgContainer {
+      left: 7.2rem;
+      width: 96%;
+
+      @include breakpoint($sm-bp) {
+        left: 0rem;
+        width: 110%;
+      }
+    }
+  }
+
+  .catalog-list__container17 {
+    height: 52rem;
+
+    @include breakpoint($sm-bp) {
+      height: 35rem;
+    }
+
+    .catalog-list__containerHelper {
+      background: #F2F2F4;
+      // width: 40.3rem;
+      width: 83%;
+      height: 36.1rem;
+      top: -5.2rem;
+      left: -0.3rem;
+
+      @include breakpoint($xl-bp) {
+        left: 6.3rem;
+        top: -16.2rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        left: 3.3rem;
+        top: -16.2rem;
+        height: 18.1rem;
+      }
+    }
+
+    .catalog-list__title {
+      padding: 0.6rem 2.4rem 0.6rem 3.1rem;
+      right: 0;
+      top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.6rem 1.4rem 0.6rem 1.1rem;
+      }
+
+
+    }
+
+    .catalog-list__imgContainer {
+      left: 4.1rem;
+      top: 2.6rem;
+      width: 58%;
+
+      @include breakpoint($sm-bp) {
+        left: 1.1rem;
+        top: 2.6rem;
+        width: 61%;
+      }
+    }
+  }
+
+  .catalog-list__container16 {
+    height: 49.1rem;
+
+    @include breakpoint($sm-bp) {
+      height: 32.1rem;
+    }
+
+    .catalog-list__containerHelper {
+      background: #F4F3EE;
+      // width: 29.4rem;
+      width: 60.3%;
+      height: 37.5rem;
+      top: -23.2rem;
+      left: 2.3rem;
+
+      @include breakpoint($xl-bp) {
+        top: -26.2rem;
+        left: 0rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 22.5rem;     
+        width: 68.3%;
+      }
+    }
+
+    .catalog-list__title {
+      padding: 0.6rem 5rem 0.6rem 4rem;
+      left: 0;
+      top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.6rem 2rem 0.6rem 2rem;
+      }
+    }
+
+    .catalog-list__imgContainer {
+      left: 11.7rem;
+      top: -3.6rem;
+      width: 118%;
+
+      @include breakpoint($sm-bp) {
+        left: 5.7rem;
+        top: 2.4rem;
+        width: 116%;
+      }
+    }
+  }
+
+  .catalog-list__container15 {
+    height: 50.3rem;
+
+    @include breakpoint($sm-bp) {
+      height: 15.3rem;
+    }
+
+    .catalog-list__containerHelper {
+      background: #FFEDDB;
+      // width: 39.4rem;
+      width: 81%;
+      height: 41.1rem;
+      top: -51.2rem;
+      left: 7.3rem;
+
+      @include breakpoint($xl-bp) {
+        top: -20.2rem;
+        left: 7rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        left: 3.2rem;
+        height: 17.1rem;
+      }
+    }
+
+    .catalog-list__title {
+      padding: 0.9rem 5.1rem 0.6rem 5.4rem;
+      right: 0;
+      top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.9rem 2.1rem 0.6rem 2.4rem;
+      }
+
+
+    }
+
+    .catalog-list__imgContainer {
+      left: -4rem;
+      top: 8rem;
+      width: 96%;
+
+      @include breakpoint($sm-bp) {
+        left: -2rem;
+        top: 4rem;
+        width: 96%;
+      }
+
+    }
+  }
+
+  .catalog-list__container19 {
+    // height: 36rem;
+    height: 0rem;
+
+    @include breakpoint($xl-bp) {
+      height: 10rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      height: 0rem;
+    }
+
+    .catalog-list__containerHelper {
+      background: #BCB8B1;
+      // width: 40.5rem;
+      width: 83.4%;
+      height: 27.3rem;
+      top: -28.9rem;
+      left: 0.6rem;
+
+      @include breakpoint($xl-bp) {
+        top: -30.9rem;
+        left: 0rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 17.3rem;
+      }
+    }
+
+    .catalog-list__title {
+      padding: 0.5rem 2.9rem 0.9rem 3rem;
+      left: 0;
+      top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.5rem 1rem 0.2rem 1rem;
+      }
+
+    }
+
+    .catalog-list__imgContainer {
+      left: -4.6rem;
+      top: -1rem;
+      width: 117%;
+
+      @include breakpoint($lb-bp) {
+        left: -1rem;
+        top: 6rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        top: 2rem;
+      }
+    }
+  }
+
+  .catalog-list__container18 {
+    // height: 31.3rem;
+    height: 0rem;
+
+    // @include breakpoint($xl-bp) {
+    //   grid-area: 9;
+    // }
+
+
+    .catalog-list__containerHelper {
+      background: #8A3434;
+      // width: 39.7rem;
+      width: 81.3%;
+      height: 23.3rem;
+      top: -46.5rem;
+      left: 7.1rem;
+
+      @include breakpoint($xl-bp) {
+        top: -27rem;
+        left: 7.1rem;
+      }
+
+      @include breakpoint($lb-bp) {
+        left: 5.1rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        height: 15.3rem;
+        left: 0rem;
+        width: 95.3%;
+      }
+    }
+
+    .catalog-list__title {
+      padding: 0.9rem 3.3rem 1rem 2.4rem;
+      left: 0;
+      top: 0;
+
+      @include breakpoint($sm-bp) {
+        padding: 0.9rem 1.3rem 1rem 1.4rem;
+      }
+
+    }
+
+    .catalog-list__imgContainer {
+      left: -0.6rem;
+      top: 0rem;
+      width: 102%;
+
+      @include breakpoint($sm-bp) {
+        left: -2.6rem;
+        top: 0rem;
+        width: 120%;
+      }
+    }
+  }
+
+  .catalog-list__containerNone {
+    height: 0rem;
+
+    @include breakpoint($xl-bp) {
+      display: none;
+    }
+  }
+  
 }
