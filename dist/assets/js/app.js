@@ -361,12 +361,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     open() {
-      this.wrapper.classList.add("voted");
+      this.wrapper.classList.add("_active");
     }
 
     close() {
-      this.wrapper.classList.remove("voted");
-      this.form.classList.remove("voted");
+      this.wrapper.classList.remove("_active");
+      this.form.classList.remove("_active");
     }
   }
 
