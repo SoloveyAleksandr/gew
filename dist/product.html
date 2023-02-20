@@ -151,6 +151,20 @@
     
       </div>
     </header>
+    <div class="modal-form">
+    
+      <div class="modal-form__bg"></div>
+    
+      <form action="#" class="modal-form__form">
+        <div class="modal-form__submit">Спасибо!</div>
+        <input type="text" class="modal-form__input" placeholder="Имя...">
+        <input type="text" class="modal-form__input" placeholder="Номер телефона...">
+        <textarea class="modal-form__input modal-form__textarea" placeholder="Ваше сообщение..."></textarea>
+        <button type="submit" class="modal-form__btn">
+          Отправить
+        </button>
+      </form>
+    </div>
     <section class="product">
       <div class="product-head-container">
         <div class="product-head">
@@ -168,7 +182,7 @@
           </div>
     
           <div class="product-head-btns">
-            <button class="product-head-btn">Заказать</button>
+            <button class="product-head-btn" data-open-form>Заказать</button>
             <button class="product-head-btns__like _active">
               <svg>
                 <use href="#like-icon"></use>

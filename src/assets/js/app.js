@@ -340,4 +340,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   //<==
 
+  // MODAL FORM
+  const modalFormWrapper = document.querySelector(".modal-form");
+  const formBtns = document.querySelectorAll("[data-open-form]");
+
+  class ModalForm {
+    constructor(wrapper) {
+      this.wrapper = typeof wrapper === "string" ? document.querySelector(wrapper) : wrapper;
+      this.bg = this.wrapper.querySelector(".modal-form__bg");
+      this.form = this.wrapper.querySelector(".modal-form__form");
+      this.btn = this.wrapper.querySelector(".modal-form__btn");
+
+      if (this.wrapper && this.bg && this.form && this.btn) {
+        this.init();
+      }
+    }
+
+    init() {
+      this.bg.addEventListener("click", this.close.bind(this))
+    }
+
+    open() {
+      this.wrapper.classList.add("_active");
+    }
+
+    close() {
+      this.wrapper.classList.remove("_active");
+      this.form.classList.remove("_active");
+    }
+  }
+
+  const FORM_MODAL = new ModalForm(modalFormWrapper);
+  FORM_MODAL && formBtns.forEach(btn => {
+    btn.addEventListener("click", () => FORM_MODAL.open())
+  })
+  //<==
+
 })
