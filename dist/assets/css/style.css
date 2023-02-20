@@ -4433,7 +4433,7 @@ svg {
     transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.catalogSecond li:hover .catalog-list__imgContainer {
+.catalogSecond li a:hover .catalog-list__imgContainer {
     -webkit-transform: translateY(1rem);
     transform: translateY(1rem);
     transition: -webkit-transform 0.2s linear;
