@@ -177,7 +177,7 @@
     }
   }
 
-  li:hover {
+  li a:hover {
     .catalog-list__imgContainer {
       transform: translateY(1rem);
       transition: transform 0.2s linear;
