@@ -178,25 +178,25 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0,
         scale: 0,
         duration: 2.5,
-        delay: 5,
+        delay: 1,
       });
       gsap.from('.main-swiper-wrapper', {
         opacity: 0,
         y: '-100vh',
         duration: 1.2,
-        delay: 6,
+        delay: 2,
         onComplete: () => swiper.autoplay.start(),
       });
 
       gsap.from('.main-title', {
         x: "-100vw",
         duration: 2,
-        delay: 6,
+        delay: 0.5,
       });
       gsap.from('.main-subtitle', {
         x: "-100vw",
         duration: 2,
-        delay: 6.5,
+        delay: 1,
       });
     }
   }
