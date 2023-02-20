@@ -1258,7 +1258,7 @@ svg {
     transition: 0.3s;
 }
 
-.modal-form._active {
+.modal-form.voted {
     opacity: 1;
     pointer-events: all;
 }
@@ -1285,7 +1285,7 @@ svg {
     z-index: 2;
 }
 
-.modal-form__form._active .modal-form__submit {
+.modal-form__form.voted .modal-form__submit {
     opacity: 1;
     pointer-events: all;
 }

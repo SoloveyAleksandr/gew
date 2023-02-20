@@ -361,12 +361,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     open() {
-      this.wrapper.classList.add("_active");
+      this.wrapper.classList.add("voted");
     }
 
     close() {
-      this.wrapper.classList.remove("_active");
-      this.form.classList.remove("_active");
+      this.wrapper.classList.remove("voted");
+      this.form.classList.remove("voted");
     }
   }
 
@@ -376,4 +376,4 @@ document.addEventListener("DOMContentLoaded", () => {
   })
   //<==
 
-})
+});
