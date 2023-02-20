@@ -136,6 +136,46 @@
       }
     }
 
+    &-btns {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      @include breakpoint($jb-bp) {
+        gap: 1rem;
+      }
+
+      &__like {
+        border: 0.2rem solid #BCB8B1;
+        padding: 0;
+        height: 7.4rem;
+        width: 7.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          object-fit: contain;
+          object-position: center center;
+          width: 60%;
+          height: 60%;
+          stroke: #BCB8B1;
+          fill: transparent;
+        }
+
+        &._active {
+          svg {
+            fill: #BCB8B1;
+          }
+        }
+
+        @include breakpoint($sm-bp) {
+          width: 5.5rem;
+          height: 5.5rem;
+        }
+      }
+    }
+
     &-btn {
       border: 0.2rem solid #BCB8B1;
       background-color: #BCB8B1;
@@ -152,8 +192,16 @@
         background-color: transparent;
       }
 
+      @include breakpoint($xl-bp) {
+        width: 27rem;
+      }
+
+      @include breakpoint($jb-bp) {
+        width: 25rem;
+      }
+
       @include breakpoint($lb-bp) {
-        width: 100%;
+        flex: 1;
       }
 
       @include breakpoint($sm-bp) {

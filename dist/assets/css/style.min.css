@@ -3489,6 +3489,49 @@ svg {
 .product-head-price__unit {
   color: rgb(70, 63, 58);
 }
+.product-head-btns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 2rem;
+}
+@media (max-width: 850px) {
+  .product-head-btns {
+    gap: 1rem;
+  }
+}
+.product-head-btns__like {
+  border: 0.2rem solid #BCB8B1;
+  padding: 0;
+  height: 7.4rem;
+  width: 7.4rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.product-head-btns__like svg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 60%;
+  height: 60%;
+  stroke: #BCB8B1;
+  fill: transparent;
+}
+.product-head-btns__like._active svg {
+  fill: #BCB8B1;
+}
+@media (max-width: 500px) {
+  .product-head-btns__like {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
 .product-head-btn {
   border: 0.2rem solid #BCB8B1;
   background-color: #BCB8B1;
@@ -3504,9 +3547,20 @@ svg {
 .product-head-btn:hover {
   background-color: transparent;
 }
+@media (max-width: 1024px) {
+  .product-head-btn {
+    width: 27rem;
+  }
+}
+@media (max-width: 850px) {
+  .product-head-btn {
+    width: 25rem;
+  }
+}
 @media (max-width: 650px) {
   .product-head-btn {
-    width: 100%;
+    -ms-flex: 1;
+        flex: 1;
   }
 }
 @media (max-width: 500px) {
