@@ -190,46 +190,89 @@
       margin-top: 3.2rem;
     }
 
-    &__text {
-      max-width: 55rem;
-      font-size: 1.8rem;
-      line-height: 2.9rem;
-      font-weight: $f-l;
-      color: rgba(70, 63, 58, 1);
+    &> {
+      p {
+        max-width: 55rem;
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+        font-weight: $f-l;
+        color: rgba(70, 63, 58, 1);
 
-      &:first-child {
-        margin-top: auto;
+        &:first-child {
+          margin-top: auto;
+
+          @include breakpoint($lb-bp) {
+            margin-top: 0;
+            order: 1;
+          }
+        }
+
+        &:nth-child(2) {
+          @include breakpoint($lb-bp) {
+            order: 3;
+          }
+        }
+
+        @include breakpoint($xl-bp) {
+          width: 100%;
+        }
+
+        @include breakpoint($jb-bp) {
+          font-size: 1.3rem;
+          line-height: 2.1rem;
+        }
 
         @include breakpoint($lb-bp) {
-          margin-top: 0;
-          order: 1;
+          max-width: 100%;
         }
       }
 
-      &:nth-child(2) {
-        @include breakpoint($lb-bp) {
-          order: 3;
-        }
-      }
-
-      @include breakpoint($xl-bp) {
-        width: 100%;
-      }
-
-      @include breakpoint($jb-bp) {
-        font-size: 1.3rem;
-        line-height: 2.1rem;
-      }
-
-      @include breakpoint($lb-bp) {
-        max-width: 100%;
-      }
-
-      &_bold {
+      strong {
         font-weight: $f-b;
         color: rgba(70, 63, 58, 1);
       }
     }
+
+    // &__text {
+    //   max-width: 55rem;
+    //   font-size: 1.8rem;
+    //   line-height: 2.9rem;
+    //   font-weight: $f-l;
+    //   color: rgba(70, 63, 58, 1);
+
+    //   &:first-child {
+    //     margin-top: auto;
+
+    //     @include breakpoint($lb-bp) {
+    //       margin-top: 0;
+    //       order: 1;
+    //     }
+    //   }
+
+    //   &:nth-child(2) {
+    //     @include breakpoint($lb-bp) {
+    //       order: 3;
+    //     }
+    //   }
+
+    //   @include breakpoint($xl-bp) {
+    //     width: 100%;
+    //   }
+
+    //   @include breakpoint($jb-bp) {
+    //     font-size: 1.3rem;
+    //     line-height: 2.1rem;
+    //   }
+
+    //   @include breakpoint($lb-bp) {
+    //     max-width: 100%;
+    //   }
+
+    //   &_bold {
+    //     font-weight: $f-b;
+    //     color: rgba(70, 63, 58, 1);
+    //   }
+    // }
 
     &-img {
       width: 55.1rem;
