@@ -2392,7 +2392,7 @@ svg {
   width: 100%;
   height: 100%;
 }
-.about-main-info__text {
+.about-main-info > p {
   -ms-flex: 1;
       flex: 1;
   font-size: 1.8rem;
@@ -2401,11 +2401,11 @@ svg {
   line-height: 158.7%;
 }
 @media (max-width: 500px) {
-  .about-main-info__text {
+  .about-main-info > p {
     font-size: 1.6rem;
   }
 }
-.about-main-info__text_bold {
+.about-main-info > strong {
   font-weight: 600;
   font-size: inherit;
   color: inherit;
@@ -2433,36 +2433,6 @@ svg {
   .about-info {
     margin-bottom: 4rem;
   }
-}
-.about-info-text {
-  padding: 8.1rem 18.4rem 8.1rem 4.6rem;
-  background-color: #F4F3EE;
-  width: 50.4rem;
-  min-height: 57.8rem;
-  font-size: 1.8rem;
-  font-weight: 300;
-  color: #463F3A;
-  text-align: justify;
-  line-height: 158.7%;
-}
-@media (max-width: 1024px) {
-  .about-info-text {
-    padding: 4rem;
-    min-height: unset;
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .about-info-text {
-    font-size: 1.6rem;
-    padding: 4rem 2rem;
-  }
-}
-.about-info-text_bold {
-  font-weight: 600;
-  font-size: inherit;
-  color: inherit;
-  line-height: inherit;
 }
 .about-info-img {
   width: 86.7rem;
@@ -2499,6 +2469,36 @@ svg {
      object-position: center center;
   width: 100%;
   height: 100%;
+}
+.about-info > p {
+  padding: 8.1rem 18.4rem 8.1rem 4.6rem;
+  background-color: #F4F3EE;
+  width: 50.4rem;
+  min-height: 57.8rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #463F3A;
+  text-align: justify;
+  line-height: 158.7%;
+}
+@media (max-width: 1024px) {
+  .about-info > p {
+    padding: 4rem;
+    min-height: unset;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .about-info > p {
+    font-size: 1.6rem;
+    padding: 4rem 2rem;
+  }
+}
+.about-info > strong {
+  font-weight: 600;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
 }
 .about-light {
   display: -ms-flexbox;
