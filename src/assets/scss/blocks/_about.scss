@@ -258,18 +258,39 @@
         }
       }
 
-      &__text {
-        font-size: 1.8rem;
-        font-weight: $f-l;
-        color: #463F3A;
-        line-height: 158.7%;
-        text-align: justify;
+      // &__text {
+      //   font-size: 1.8rem;
+      //   font-weight: $f-l;
+      //   color: #463F3A;
+      //   line-height: 158.7%;
+      //   text-align: justify;
 
-        @include breakpoint($sm-bp) {
-          font-size: 1.6rem;
+      //   @include breakpoint($sm-bp) {
+      //     font-size: 1.6rem;
+      //   }
+
+      //   &_bold {
+      //     font-weight: $f-s;
+      //     font-size: inherit;
+      //     color: inherit;
+      //     line-height: inherit;
+      //   }
+      // }
+
+      &> {
+        p {
+          font-size: 1.8rem;
+          font-weight: $f-l;
+          color: #463F3A;
+          line-height: 158.7%;
+          text-align: justify;
+
+          @include breakpoint($sm-bp) {
+            font-size: 1.6rem;
+          }
         }
 
-        &_bold {
+        strong {
           font-weight: $f-s;
           font-size: inherit;
           color: inherit;
@@ -303,12 +324,20 @@
             }
           }
 
-          &__text {
-            max-width: 49rem;
+          // &__text {
+          //   max-width: 49rem;
 
-            @include breakpoint($xl-bp) {
-              max-width: 100%;
-            }
+          //   @include breakpoint($xl-bp) {
+          //     max-width: 100%;
+          //   }
+          // }
+        }
+
+        p {
+          max-width: 49rem;
+
+          @include breakpoint($xl-bp) {
+            max-width: 100%;
           }
         }
       }
@@ -342,19 +371,34 @@
             }
           }
 
-          &__text {
-            width: 46.5rem;
-            padding: 7.8rem 4.8rem 8.5rem;
-            background-color: #F4F3EE;
+          // &__text {
+          //   width: 46.5rem;
+          //   padding: 7.8rem 4.8rem 8.5rem;
+          //   background-color: #F4F3EE;
 
-            @include breakpoint($xl-bp) {
-              width: 100%;
-              padding: 4rem;
-            }
+          //   @include breakpoint($xl-bp) {
+          //     width: 100%;
+          //     padding: 4rem;
+          //   }
 
-            @include breakpoint($sm-bp) {
-              padding: 4rem 2rem;
-            }
+          //   @include breakpoint($sm-bp) {
+          //     padding: 4rem 2rem;
+          //   }
+          // }
+        }
+
+        p {
+          width: 46.5rem;
+          padding: 7.8rem 4.8rem 8.5rem;
+          background-color: #F4F3EE;
+
+          @include breakpoint($xl-bp) {
+            width: 100%;
+            padding: 4rem;
+          }
+
+          @include breakpoint($sm-bp) {
+            padding: 4rem 2rem;
           }
         }
       }
