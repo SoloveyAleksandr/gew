@@ -36,6 +36,7 @@
     gap: 1.8rem;
     row-gap: 6.1rem;
     margin-bottom: 7.2rem;
+    margin-top: 8.9rem;
 
     @include breakpoint($xl-bp) {
       gap: 0.6rem;
@@ -43,6 +44,7 @@
       margin-bottom: 6.4rem;
       grid-template-columns: repeat(2, 1fr);
       overflow: hidden;
+      margin-top: 3.1rem;
     }
 
     @include breakpoint($jb-bp) {
@@ -823,6 +825,7 @@
       @include breakpoint($xl-bp) {
         left: 0rem;
         top: -6.6rem;
+        height: 18.2rem;
       }
 
       @include breakpoint($sm-bp) {
@@ -945,6 +948,12 @@
       top: -3.6rem;
       width: 118%;
 
+      @include breakpoint($xl-bp) {
+        left: 11.7rem;
+        top: -0.6rem;
+        width: 111%;
+      }
+
       @include breakpoint($sm-bp) {
         left: 5.7rem;
         top: 2.4rem;
@@ -971,6 +980,7 @@
       @include breakpoint($xl-bp) {
         top: -20.2rem;
         left: 7rem;
+        height: 32.1rem;
       }
 
       @include breakpoint($sm-bp) {
@@ -995,6 +1005,12 @@
       left: -4rem;
       top: 8rem;
       width: 96%;
+
+      @include breakpoint($xl-bp) {
+        left: -4rem;
+        top: 8rem;
+        width: 82%;
+      }
 
       @include breakpoint($sm-bp) {
         left: -2rem;

@@ -3751,6 +3751,7 @@ svg {
   gap: 1.8rem;
   row-gap: 6.1rem;
   margin-bottom: 7.2rem;
+  margin-top: 8.9rem;
 }
 @media (max-width: 1024px) {
   .catalogSecond .catalog-list {
@@ -3759,6 +3760,7 @@ svg {
     margin-bottom: 6.4rem;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
+    margin-top: 3.1rem;
   }
 }
 @media (max-width: 850px) {
@@ -4500,6 +4502,7 @@ svg {
   .catalogSecond .catalog-list__container14 .catalog-list__containerHelper {
     left: 0rem;
     top: -6.6rem;
+    height: 18.2rem;
   }
 }
 @media (max-width: 500px) {
@@ -4619,6 +4622,13 @@ svg {
   top: -3.6rem;
   width: 118%;
 }
+@media (max-width: 1024px) {
+  .catalogSecond .catalog-list__container16 .catalog-list__imgContainer {
+    left: 11.7rem;
+    top: -0.6rem;
+    width: 111%;
+  }
+}
 @media (max-width: 500px) {
   .catalogSecond .catalog-list__container16 .catalog-list__imgContainer {
     left: 5.7rem;
@@ -4645,6 +4655,7 @@ svg {
   .catalogSecond .catalog-list__container15 .catalog-list__containerHelper {
     top: -20.2rem;
     left: 7rem;
+    height: 32.1rem;
   }
 }
 @media (max-width: 500px) {
@@ -4667,6 +4678,13 @@ svg {
   left: -4rem;
   top: 8rem;
   width: 96%;
+}
+@media (max-width: 1024px) {
+  .catalogSecond .catalog-list__container15 .catalog-list__imgContainer {
+    left: -4rem;
+    top: 8rem;
+    width: 82%;
+  }
 }
 @media (max-width: 500px) {
   .catalogSecond .catalog-list__container15 .catalog-list__imgContainer {
