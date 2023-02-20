@@ -1258,7 +1258,7 @@ svg {
     transition: 0.3s;
 }
 
-.modal-form.voted {
+.modal-form._active {
     opacity: 1;
     pointer-events: all;
 }
@@ -1285,7 +1285,7 @@ svg {
     z-index: 2;
 }
 
-.modal-form__form.voted .modal-form__submit {
+.modal-form__form._active .modal-form__submit {
     opacity: 1;
     pointer-events: all;
 }
@@ -4105,7 +4105,7 @@ svg {
     fill: transparent;
 }
 
-.product-head-btns__like._active svg {
+.product-head-btns__like.voted svg {
     fill: #BCB8B1;
 }
 
