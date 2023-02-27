@@ -82,21 +82,24 @@ document.addEventListener("DOMContentLoaded", () => {
           e.stopPropagation();
           this.isActive ?
             null :
-            this.openSearch.call(this);
+            this.openSearch.call(this, e);
         };
       }
 
-      openSearch() {
+      openSearch(e) {
         this.isActive = true;
         if (window.innerWidth <= 650) {
+          e.preventDefault();
           this.input.classList.add('_active');
           this.input.focus();
         }
       }
 
       closeSearch() {
-        this.isActive = false;
-        this.input.classList.remove('_active');
+        if (window.innerWidth <= 650) {
+          this.isActive = false;
+          this.input.classList.remove('_active');
+        }
       }
     }
 
