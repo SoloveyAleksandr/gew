@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         this.btn.onclick = (e) => {
           e.stopPropagation();
           this.isActive ?
-            this.closeSearch.call(this) :
+            null :
             this.openSearch.call(this);
         };
       }
