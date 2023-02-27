@@ -331,6 +331,7 @@
         background-color: #fff;
         padding: 1.2rem 0rem 0.7rem;
         position: absolute;
+        z-index: 2;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -693,11 +694,11 @@
       &:nth-child(6) &-bg {
         width: 30.6rem;
         height: 22rem;
-        background-color: transparent;
+        background-color: #e0afa0;
 
-        @include breakpoint($xl-bp) {
-          background-color: #e0afa0;
-        }
+        // @include breakpoint($xl-bp) {
+        //   background-color: #e0afa0;
+        // }
 
         @include breakpoint($lb-bp) {
           width: 24.6rem;
@@ -714,11 +715,11 @@
         top: 0;
         left: 0;
         padding: 2.5rem 0rem 2.1rem;
-        display: none;
+        // display: none;
 
-        @include breakpoint($xl-bp) {
-          display: flex;
-        }
+        // @include breakpoint($xl-bp) {
+        //   display: flex;
+        // }
 
         @include breakpoint($sm-bp) {
           width: fit-content;

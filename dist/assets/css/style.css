@@ -1749,6 +1749,7 @@ svg {
     background-color: #fff;
     padding: 1.2rem 0rem 0.7rem;
     position: absolute;
+    z-index: 2;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -2231,13 +2232,7 @@ svg {
 .main-collections-item:nth-child(6) .main-collections-item-bg {
     width: 30.6rem;
     height: 22rem;
-    background-color: transparent;
-}
-
-@media (max-width: 1024px) {
-    .main-collections-item:nth-child(6) .main-collections-item-bg {
-        background-color: #e0afa0;
-    }
+    background-color: #e0afa0;
 }
 
 @media (max-width: 650px) {
@@ -2258,14 +2253,6 @@ svg {
     top: 0;
     left: 0;
     padding: 2.5rem 0rem 2.1rem;
-    display: none;
-}
-
-@media (max-width: 1024px) {
-    .main-collections-item:nth-child(6) .main-collections-item-name {
-        display: -ms-flexbox;
-        display: flex;
-    }
 }
 
 @media (max-width: 500px) {
