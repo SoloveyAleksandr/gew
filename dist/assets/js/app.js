@@ -386,4 +386,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   //<==
 
+  if (location.href.indexOf("#") > 1) {
+    const id = location.href.slice(location.href.indexOf("#") + 1);
+    const el = document.getElementById(id);
+
+    if (el) {
+      window.scrollTo(el.getBoundingClientRect().y);
+    }
+  }
 });

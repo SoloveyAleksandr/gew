@@ -439,6 +439,10 @@ textarea {
     padding: 0.2em 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
