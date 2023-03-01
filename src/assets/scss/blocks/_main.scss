@@ -296,6 +296,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     margin-bottom: 30.7rem;
+    position: relative;
 
     @include breakpoint($cos-bp) {
       max-width: 100vw;
@@ -375,12 +376,14 @@
 
       &:nth-child(1) {
         padding-top: 3.3rem;
+        position: absolute;
 
         @include breakpoint($xl-bp) {
           grid-column-start: 1;
           grid-column-end: 3;
           margin-left: 0;
           margin-bottom: 1.8rem;
+          position: static;
         }
 
         @include breakpoint($lb-bp) {
@@ -389,10 +392,11 @@
       }
 
       &:nth-child(2) {
-        display: none;
-
+        // display: none;
+        transform: translate(0, 18rem);
         @include breakpoint($xl-bp) {
-          display: block;
+          // display: block;
+          transform: translate(0);
         }
       }
 

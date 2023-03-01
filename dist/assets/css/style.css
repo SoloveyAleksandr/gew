@@ -1701,6 +1701,7 @@ svg {
     display: grid;
     grid-template-columns: repeat(3, auto);
     margin-bottom: 30.7rem;
+    position: relative;
 }
 
 @media (max-width: 1330px) {
@@ -1802,6 +1803,7 @@ svg {
 
 .main-collections-item:nth-child(1) {
     padding-top: 3.3rem;
+    position: absolute;
 }
 
 @media (max-width: 1024px) {
@@ -1810,6 +1812,7 @@ svg {
         grid-column-end: 3;
         margin-left: 0;
         margin-bottom: 1.8rem;
+        position: static;
     }
 }
 
@@ -1820,12 +1823,14 @@ svg {
 }
 
 .main-collections-item:nth-child(2) {
-    display: none;
+    -webkit-transform: translate(0, 18rem);
+    transform: translate(0, 18rem);
 }
 
 @media (max-width: 1024px) {
     .main-collections-item:nth-child(2) {
-        display: block;
+        -webkit-transform: translate(0);
+        transform: translate(0);
     }
 }
 

@@ -181,25 +181,29 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0,
         scale: 0,
         duration: 2.5,
-        delay: 1,
+        // delay: 1,
+        delay: 1 + 3,
       });
       gsap.from('.main-swiper-wrapper', {
         opacity: 0,
         y: '-100vh',
         duration: 1.2,
-        delay: 2,
+        // delay: 2,
+        delay: 2 + 3,
         onComplete: () => swiper.autoplay.start(),
       });
 
       gsap.from('.main-title', {
         x: "-100vw",
         duration: 2,
-        delay: 0.5,
+        // delay: 0.5,
+        delay: 0.5 + 3,
       });
       gsap.from('.main-subtitle', {
         x: "-100vw",
         duration: 2,
-        delay: 1,
+        // delay: 1,
+        delay: 1 + 3,
       });
     }
   }
@@ -210,9 +214,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: '.main-collections',
-          start: "top 50%",
-          end: "bottom 10%",
+          start: "top 90%",
+          end: "bottom top",
           toggleActions: "play none play reverse",
+          // markers: true,
         }
       })
       animList.forEach((item, index) => {
@@ -373,10 +378,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const FORM_MODAL = new ModalForm(modalFormWrapper);
-  FORM_MODAL && formBtns.forEach(btn => {
-    btn.addEventListener("click", () => FORM_MODAL.open())
-  })
+  if (modalFormWrapper) {
+    const FORM_MODAL = new ModalForm(modalFormWrapper);
+    FORM_MODAL && formBtns.forEach(btn => {
+      btn.addEventListener("click", () => FORM_MODAL.open())
+    })
+  }
   //<==
 
 });
