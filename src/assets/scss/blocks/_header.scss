@@ -100,6 +100,7 @@
     height: 6.32rem;
     margin-right: 5.86rem;
     transition: 0.3s;
+    flex: none;
 
     &:hover {
       opacity: 0.5;
@@ -144,9 +145,14 @@
 
     &_btn {
       color: rgba(46, 108, 101, 0.7);
-      padding: 0.2rem 1.6rem;
+      // padding: 0.2rem 1.6rem;
+      padding: 1rem 5%;
       border: 0.2rem solid #2e6c65;
       border-radius: 3.2rem;
+
+      @include breakpoint($xl-bp) {
+        padding: 0.5rem 5%;
+      }
     }
   }
 

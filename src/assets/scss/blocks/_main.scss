@@ -1,4 +1,6 @@
 .main {
+  overflow: hidden;
+
   &-info {
     display: flex;
     flex-direction: column;
@@ -71,9 +73,10 @@
     height: 94.4rem;
     border-radius: 50%;
     background-color: #fff;
-    overflow-y: visible;
+    // overflow-y: visible;
     transform: translateY(-4.1rem);
     margin: 0;
+    overflow: visible;
 
     @include breakpoint($cos-bp) {
       width: 73rem;
@@ -156,10 +159,29 @@
       display: flex;
       justify-content: center;
       background-color: #fff;
+      border-radius: 50%;
+
+      &.swiper-slide-duplicate-active,
+      &.swiper-slide-active & {
+        &-img {
+          opacity: 1;
+        }
+      }
 
       &-img {
         height: 100%;
         width: 56.14%;
+        transform: scale(1.4) translateY(3rem) translateX(-2rem);
+        opacity: 0;
+        transition: .5s;
+
+        @include breakpoint($xl-bp) {
+          transform: scale(1.2) translateY(4rem) translateX(-5rem);
+        }
+
+        @include breakpoint($lb-bp) {
+          transform: scale(1.4);
+        }
 
         &__img {
           object-fit: contain;
@@ -394,6 +416,7 @@
       &:nth-child(2) {
         // display: none;
         transform: translate(0, 18rem);
+
         @include breakpoint($xl-bp) {
           // display: block;
           transform: translate(0);
@@ -876,7 +899,8 @@
 
     &-item {
       display: flex;
-      align-items: flex-end;
+      // align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
       padding-right: 7.8rem;
 
@@ -951,6 +975,14 @@
 
         @include breakpoint($xl-bp) {
           font-size: 1.1rem;
+        }
+
+        @include breakpoint($lb-bp) {
+          margin-bottom: 5rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          margin-bottom: 0rem;
         }
       }
 
