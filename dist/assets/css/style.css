@@ -1907,7 +1907,13 @@ svg {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 0.3rem 1.9rem 0.2rem;
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 1024px) {
+    .main-collections-item:nth-child(2) .main-collections-item-name {
+        padding: 0.3rem 1.9rem 0.2rem;
+    }
 }
 
 .main-collections-item:nth-child(2) .main-collections-item-img {
@@ -2589,6 +2595,7 @@ svg {
 
 .main-colors-item-description {
     font-size: 2.4rem;
+    line-height: 2.9rem;
     font-weight: 400;
     color: rgba(20, 21, 23, 0.7);
     margin-bottom: 6.4rem;
@@ -2597,6 +2604,7 @@ svg {
 @media (max-width: 1024px) {
     .main-colors-item-description {
         font-size: 1.1rem;
+        line-height: 1.3rem;
     }
 }
 
@@ -3743,7 +3751,7 @@ svg {
     grid-template-rows: auto;
     grid-gap: 3.2rem;
     padding: 0rem 1.1rem 5rem 4.8rem;
-    border-bottom: 0.9rem solid #D9D9D9;
+    border-bottom: 0.2rem solid #D9D9D9;
 }
 
 @media (max-width: 1024px) {
@@ -3808,7 +3816,7 @@ svg {
 .gallery-list-item-link {
     font-size: 1.6rem;
     font-weight: 700;
-    padding: 2rem 5rem;
+    padding: 3rem 12.6rem;
     border: 0.13rem solid #000;
     border-radius: 1.9rem;
 }

@@ -448,7 +448,11 @@
         top: 0;
         left: 0;
         width: fit-content;
-        padding: 0.3rem 1.9rem 0.2rem;
+        padding: 1rem 2rem;
+
+        @include breakpoint($xl-bp) {
+          padding: 0.3rem 1.9rem 0.2rem;
+        }
       }
 
       &:nth-child(2) &-img {
@@ -969,12 +973,14 @@
 
       &-description {
         font-size: 2.4rem;
+        line-height: 2.9rem;
         font-weight: $f-r;
         color: rgba(20, 21, 23, 0.7);
         margin-bottom: 6.4rem;
 
         @include breakpoint($xl-bp) {
           font-size: 1.1rem;
+          line-height: 1.3rem;
         }
 
         @include breakpoint($lb-bp) {

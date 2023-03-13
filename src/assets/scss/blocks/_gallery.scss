@@ -29,7 +29,8 @@
       grid-template-rows: auto;
       grid-gap: 3.2rem;
       padding: 0rem 1.1rem 5rem 4.8rem;
-      border-bottom: 0.9rem solid #D9D9D9;
+      // border-bottom: 0.9rem solid #D9D9D9;
+      border-bottom: 0.2rem solid #D9D9D9;
 
       @include breakpoint($xl-bp) {
         border-bottom: 0.2rem solid #D9D9D9;
@@ -87,8 +88,8 @@
       &-link {
         font-size: 1.6rem;
         font-weight: $f-b;
-        // padding: 3rem 12.6rem;
-        padding: 2rem 5rem;
+        padding: 3rem 12.6rem;
+        // padding: 2rem 5rem;
         border: 0.13rem solid #000;
         border-radius: 1.9rem;
 
