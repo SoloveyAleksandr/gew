@@ -16,6 +16,10 @@
     background-color: #fff;
   }
 
+  @include breakpoint($sm-bp) {
+    padding-bottom: calc(0.5rem * 1.28);
+  }
+
   &-container {
     display: flex;
     align-items: center;
@@ -45,6 +49,11 @@
       display: flex;
     }
 
+    @include breakpoint($sm-bp) {
+      width: calc(2.5rem * 1.28);
+      height: calc(2.5rem * 1.28);
+    }
+
     &-burger {
       width: 2.5rem;
       height: 0.2rem;
@@ -54,6 +63,11 @@
       justify-content: center;
       position: relative;
       transition: 0.5s;
+
+      @include breakpoint($sm-bp) {
+        width: calc(2.5rem * 1.28);
+        height: calc(0.2rem * 1.28);
+      }
 
       &::before,
       &::after {
@@ -67,10 +81,18 @@
 
       &::before {
         top: -0.7rem;
+
+        @include breakpoint($sm-bp) {
+          top: calc(-0.7rem * 1.28);
+        }
       }
 
       &::after {
         top: 0.7rem;
+
+        @include breakpoint($sm-bp) {
+          top: calc(0.7rem * 1.28);
+        }
       }
     }
 
@@ -93,6 +115,10 @@
     @include breakpoint($xl-bp) {
       gap: 1.8rem;
     }
+
+    @include breakpoint($sm-bp) {
+      gap: calc(1.8rem * 1.28);
+    }
   }
 
   &-logo {
@@ -114,6 +140,11 @@
 
     @include breakpoint($lb-bp) {
       margin: 0;
+    }
+
+    @include breakpoint($sm-bp) {
+      width: calc(3.2rem * 1.28);
+      height: calc(3.4rem * 1.28);
     }
 
     &__img {
@@ -143,6 +174,10 @@
       display: none;
     }
 
+    @include breakpoint($sm-bp) {
+      font-size: calc(1.8rem * 1.28);
+    }
+
     &_btn {
       color: rgba(46, 108, 101, 0.7);
       // padding: 0.2rem 1.6rem;
@@ -153,6 +188,10 @@
       @include breakpoint($xl-bp) {
         padding: 0.5rem 5%;
       }
+
+      @include breakpoint($sm-bp) {
+        padding: calc(0.5rem * 1.28) 5%;
+      }
     }
   }
 
@@ -160,6 +199,10 @@
     &-wrapper {
       display: flex;
       gap: 2.2rem;
+
+      @include breakpoint($sm-bp) {
+        gap: calc(2.2rem * 1.28);
+      }
     }
 
     &-inner {
@@ -217,6 +260,11 @@
           pointer-events: all;
         }
       }
+
+      @include breakpoint($sm-bp) {
+        font-size: calc(1.3rem * 1.28);
+        transform: translateY(2rem * 1.28);
+      }
     }
 
     &-btn {
@@ -238,6 +286,11 @@
         @include breakpoint($lb-bp) {
           width: 2.5rem;
           height: 2.5rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          width: calc(2.5rem * 1.28);
+          height: calc(2.5rem * 1.28);
         }
       }
 
@@ -265,6 +318,15 @@
         justify-content: center;
         font-size: 1.2rem;
         line-height: 1.2rem;
+
+        @include breakpoint($sm-bp) {
+          top: calc(-0.8rem * 1.28);
+          right: calc(-0.8rem * 1.28);
+          width: calc(1.8rem * 1.28);
+          height: calc(1.8rem * 1.28);
+          font-size: calc(1.2rem * 1.28);
+          line-height: calc(1.2rem * 1.28);
+        }
       }
     }
 
