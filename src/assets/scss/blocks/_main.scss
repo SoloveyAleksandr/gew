@@ -26,6 +26,7 @@
     line-height: 7.7rem;
     margin-bottom: 4.5rem;
     color: #2c2e3f;
+    text-transform: uppercase;
 
     @include breakpoint($xl-bp) {
       font-size: 2.4rem;
@@ -45,6 +46,7 @@
     line-height: 3.85rem;
     margin-bottom: 7rem;
     color: #8a817c;
+    text-transform: uppercase;
 
     @include breakpoint($xl-bp) {
       font-size: 1.1rem;
@@ -158,7 +160,7 @@
       height: 100%;
       display: flex;
       justify-content: center;
-      background-color: #fff;
+      // background-color: #fff;
       border-radius: 50%;
 
       &.swiper-slide-duplicate-active,
@@ -347,10 +349,11 @@
 
       &-name {
         font-size: 2.4rem;
+        line-height: 3.6rem;
         font-weight: $f-m;
         font-family: $ff-p;
         color: #2c2e3f;
-        width: 19.2rem;
+        // width: 19.2rem;
         background-color: #fff;
         padding: 1.2rem 0rem 0.7rem;
         position: absolute;
@@ -382,7 +385,7 @@
         font-weight: $f-b;
         color: #2c2e3f;
         text-transform: uppercase;
-        max-width: 26rem;
+        max-width: 38rem;
 
         @include breakpoint($xl-bp) {
           font-size: 1.8rem;
@@ -397,8 +400,12 @@
       }
 
       &:nth-child(1) {
-        padding-top: 3.3rem;
+        // padding-top: 3.3rem;
         position: absolute;
+
+        @include breakpoint($cos-bp) {
+          left: 2.9rem;
+        }
 
         @include breakpoint($xl-bp) {
           grid-column-start: 1;
@@ -447,8 +454,8 @@
       &:nth-child(2) &-name {
         top: 0;
         left: 0;
-        width: fit-content;
-        padding: 1rem 2rem;
+        // width: fit-content;
+        padding: 1.2rem 4.7rem;
 
         @include breakpoint($xl-bp) {
           padding: 0.3rem 1.9rem 0.2rem;
@@ -480,7 +487,7 @@
       }
 
       &:nth-child(3) {
-        transform: translate(2.1rem, 0);
+        transform: translate(1.1rem, 0);
 
         @include breakpoint($xl-bp) {
           transform: translate(0, 0);
@@ -514,6 +521,8 @@
       &:nth-child(3) &-name {
         bottom: calc(100% - 42.2rem);
         right: calc(100% - 32.3rem);
+
+        padding: 1.2rem 1.6rem;
 
         @include breakpoint($jb-bp) {
           bottom: calc(100% - 38.2rem);
@@ -591,7 +600,7 @@
       &:nth-child(4) &-name {
         bottom: 0;
         left: 0;
-        padding: 2.5rem 0rem 2.1rem;
+        padding: 1.2rem 4.5rem;
 
         @include breakpoint($lb-bp) {
           width: fit-content;
@@ -664,6 +673,11 @@
       &:nth-child(5) &-name {
         top: 0;
         right: calc(100% - 39.1rem);
+        padding: 1.2rem 2.1rem;
+
+        @include breakpoint($jb-bp) {
+          right: calc(100% - 35.1rem);
+        }
 
         @include breakpoint($lb-bp) {
           right: calc(100% - 26rem);
@@ -681,7 +695,7 @@
         width: 31.3rem;
         height: 43.4rem;
         top: -2.6rem;
-        left: 0rem;
+        left: -4rem;
 
         @include breakpoint($jb-bp) {
           width: 26.3rem;
@@ -703,7 +717,11 @@
       }
 
       &:nth-child(6) {
-        transform: translate(4.9rem, 12.8rem);
+        transform: translate(0.8rem, 4.7rem);
+
+        @include breakpoint($cos-bp) {
+          transform: translate(0.8rem, 4.4rem);
+        }
 
         @include breakpoint($xl-bp) {
           transform: translate(0, 12.8rem);
@@ -723,8 +741,8 @@
       }
 
       &:nth-child(6) &-bg {
-        width: 30.6rem;
-        height: 22rem;
+        width: 33rem;
+        height: 28rem;
         background-color: #e0afa0;
 
         // @include breakpoint($xl-bp) {
@@ -743,9 +761,9 @@
       }
 
       &:nth-child(6) &-name {
-        top: 0;
-        left: 0;
-        padding: 2.5rem 0rem 2.1rem;
+        top: -0.1rem;
+        left: -0.1rem;
+        padding: 1.2rem 5.6rem;
         // display: none;
 
         // @include breakpoint($xl-bp) {
@@ -760,9 +778,9 @@
 
       &:nth-child(6) &-img {
         width: 31.7rem;
-        height: 32rem;
-        top: 0rem;
-        right: -2.5rem;
+        height: 48rem;
+        top: 0;
+        right: -3.7rem;
 
         @include breakpoint($jb-bp) {
           width: 26.7rem;
@@ -825,8 +843,10 @@
       }
 
       &:nth-child(7) &-name {
-        top: 0;
-        right: calc(100% - 41.1rem);
+        top: -0.1rem;
+        right: calc(100% - 41.3rem);
+
+        padding: 1.2rem 3.7rem;
 
         @include breakpoint($lb-bp) {
           right: calc(100% - 28.7rem);
@@ -973,7 +993,7 @@
 
       &-description {
         font-size: 2.4rem;
-        line-height: 2.9rem;
+        line-height: 3.5rem;
         font-weight: $f-r;
         color: rgba(20, 21, 23, 0.7);
         margin-bottom: 6.4rem;

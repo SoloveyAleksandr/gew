@@ -29,8 +29,12 @@ html {
     font-size: calc(100vw / 500 * 10);
   }
 
+  // @include breakpoint($xs-bp) {
+  //   font-size: calc(100vw / 375 * 10);
+  // }
+
   @include breakpoint($xs-bp) {
-    font-size: calc(100vw / 375 * 10);
+    font-size: calc(100vw / 390 * 10);
   }
 }
 

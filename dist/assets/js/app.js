@@ -254,6 +254,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const mainColorsItems = gsap.utils.toArray(".main-colors-item");
+
+  mainColorsItems.forEach((item, index) => {
+    gsap.from(item, {
+      x: index % 2 > 0 ? "-100%" : "100%",
+      opacity: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: item,
+        toggleActions: "play none play reverse",
+      }
+    })
+  })
+
   // CATALOG
   // if (document.querySelector('.catalog-list')) {
   //   const animList = gsap.utils.toArray('.catalog-list-item');
@@ -393,5 +407,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (el) {
       window.scrollTo(el.getBoundingClientRect().y);
     }
+  }
+
+  const catalogSecond = document.querySelector(".catalogSecond");
+  if (catalogSecond && window.matchMedia("(min-width: 1025px)").matches) {
+    const catalogList = [...catalogSecond.querySelector(".catalog-list").children];
+
+    catalogList.forEach((item) => {
+      gsap.from(item, {
+        y: "100%",
+        duration: 1,
+        delay: 0.3,
+        opacity: 0,
+
+        scrollTrigger: {
+          trigger: item,
+          start: "-=50% bottom",
+        }
+      })
+    })
   }
 });
