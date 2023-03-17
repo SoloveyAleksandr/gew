@@ -212,6 +212,10 @@
       @include breakpoint($xs-bp) {
         padding: 0rem 2.1rem 0rem 1.9rem;
       }
+
+      @include breakpoint($sm-bp) {
+        padding: 0.5rem 3rem 0.5rem 3rem;
+      }
     }
 
     .catalog-list__imgContainer {
@@ -276,6 +280,10 @@
 
   .catalog-list__container3 {
 
+    @include breakpoint($sm-bp) {
+      margin-top: 4rem;
+    }
+
     @include breakpoint($xs-bp) {
       height: 15rem;
     }
@@ -314,8 +322,15 @@
       left: 0;
       bottom: 0;
 
+      @include breakpoint($lb-bp) {
+        padding: 0.8rem 2.3rem 0.7rem;
+        left: 4rem;
+        bottom: 0;
+      }
+
       @include breakpoint($sm-bp) {
-        padding: 0.8rem 3.3rem 0.7rem 3.3rem;
+        padding: 0.3rem 2.3rem 0.3rem;
+        left: 0;
       }
 
       @include breakpoint($xs-bp) {
@@ -1359,6 +1374,7 @@
       padding: 0.9rem 3.3rem 1rem 2.4rem;
       left: 0;
       top: 0;
+      z-index: 111;
 
       @include breakpoint($sm-bp) {
         padding: 0.9rem 1.3rem 1rem 1.4rem;
@@ -1375,6 +1391,7 @@
       left: -0.6rem;
       top: 0rem;
       width: 102%;
+
 
       @include breakpoint($sm-bp) {
         left: -2.6rem;

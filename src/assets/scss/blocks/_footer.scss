@@ -13,7 +13,7 @@
     }
 
     @include breakpoint($xl-bp) {
-      padding-top: 0.4rem;
+      padding-top: 1.4rem;
     }
   }
 
@@ -45,7 +45,9 @@
     }
 
     @include breakpoint($sm-bp) {
-      grid-template-columns: repeat(2, auto);
+      // grid-template-columns: repeat(2, auto);
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
     }
 
     &-item {
@@ -55,8 +57,15 @@
 
       @include breakpoint($jb-bp) {
         &:first-child {
-          grid-column-start: 1;
-          grid-column-end: 3;
+          // grid-column-start: 1;
+          // grid-column-end: 3;
+        }
+      }
+
+      &:nth-child(3) {
+        
+        @include breakpoint($sm-bp) {
+          grid-area: 2;
         }
       }
 

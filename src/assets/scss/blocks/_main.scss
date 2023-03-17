@@ -67,6 +67,7 @@
     @include breakpoint($sm-bp) {
       pointer-events: all;
       justify-content: space-between;
+      margin-top: 2rem;
     }
   }
 
@@ -896,6 +897,10 @@
 
     @include breakpoint($xl-bp) {
       padding: 0 2.9rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 15.8rem;
     }
 
     &-title {

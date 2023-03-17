@@ -1003,7 +1003,7 @@ svg {
 
 @media (max-width: 1024px) {
     .footer-container {
-        padding-top: 0.4rem;
+        padding-top: 1.4rem;
     }
 }
 
@@ -1047,7 +1047,8 @@ svg {
 
 @media (max-width: 500px) {
     .footer-nav {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
     }
 }
 
@@ -1059,10 +1060,9 @@ svg {
     gap: 1.2rem;
 }
 
-@media (max-width: 850px) {
-    .footer-nav-item:first-child {
-        grid-column-start: 1;
-        grid-column-end: 3;
+@media (max-width: 500px) {
+    .footer-nav-item:nth-child(3) {
+        grid-area: 2;
     }
 }
 
@@ -1298,6 +1298,13 @@ svg {
     z-index: 2;
 }
 
+@media (max-width: 650px) {
+    .modal-form__form {
+        width: 100%;
+        padding: 4rem 2.4rem;
+    }
+}
+
 .modal-form__form._active .modal-form__submit {
     opacity: 1;
     pointer-events: all;
@@ -1441,6 +1448,7 @@ svg {
         pointer-events: all;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        margin-top: 2rem;
     }
 }
 
@@ -2491,6 +2499,12 @@ svg {
 @media (max-width: 1024px) {
     .main-colors {
         padding: 0 2.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-colors {
+        margin-bottom: 15.8rem;
     }
 }
 
@@ -4730,6 +4744,12 @@ svg {
     }
 }
 
+@media (max-width: 500px) {
+    .catalogSecond .catalog-list__container1 .catalog-list__title {
+        padding: 0.5rem 3rem 0.5rem 3rem;
+    }
+}
+
 .catalogSecond .catalog-list__container1 .catalog-list__imgContainer {
     width: 94%;
     position: absolute;
@@ -4800,6 +4820,12 @@ svg {
     }
 }
 
+@media (max-width: 500px) {
+    .catalogSecond .catalog-list__container3 {
+        margin-top: 4rem;
+    }
+}
+
 @media (max-width: 390px) {
     .catalogSecond .catalog-list__container3 {
         height: 15rem;
@@ -4846,9 +4872,18 @@ svg {
     bottom: 0;
 }
 
+@media (max-width: 650px) {
+    .catalogSecond .catalog-list__container3 .catalog-list__title {
+        padding: 0.8rem 2.3rem 0.7rem;
+        left: 4rem;
+        bottom: 0;
+    }
+}
+
 @media (max-width: 500px) {
     .catalogSecond .catalog-list__container3 .catalog-list__title {
-        padding: 0.8rem 3.3rem 0.7rem 3.3rem;
+        padding: 0.3rem 2.3rem 0.3rem;
+        left: 0;
     }
 }
 
@@ -6092,6 +6127,7 @@ svg {
     padding: 0.9rem 3.3rem 1rem 2.4rem;
     left: 0;
     top: 0;
+    z-index: 111;
 }
 
 @media (max-width: 500px) {
