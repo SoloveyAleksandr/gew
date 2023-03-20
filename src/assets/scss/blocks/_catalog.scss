@@ -7,6 +7,10 @@
     padding-top: 7.8rem;
   }
 
+  @include breakpoint($sm-bp) {
+    padding-top: calc(7.8rem * 1.28);
+  }
+
   &-title {
     font-size: 4.8rem;
     font-weight: $f-b;
@@ -17,6 +21,11 @@
     @include breakpoint($xl-bp) {
       font-size: 1.8rem;
       margin-bottom: 3.1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      font-size: calc(1.8rem * 1.28);
+      margin-bottom: calc(3.1rem * 1.28);
     }
   }
 
@@ -35,6 +44,12 @@
 
     @include breakpoint($jb-bp) {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($sm-bp) {
+      gap: calc(0.6rem * 1.28);
+      row-gap: calc(1.8rem * 1.28);
+      margin-bottom: calc(6.4rem * 1.28);
     }
 
     &-item {
@@ -69,6 +84,11 @@
           height: 24.8rem;
         }
 
+        @include breakpoint($sm-bp) {
+          height: calc(24.8rem * 1.28);
+          margin-bottom: calc(0.8rem * 1.28);
+        }
+
         &__img {
           object-fit: cover;
           object-position: center center;
@@ -86,6 +106,10 @@
         @include breakpoint($xl-bp) {
           font-size: 1.1rem;
         }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.1rem * 1.28);
+        }
       }
 
       &__description {
@@ -96,6 +120,10 @@
         @include breakpoint($xl-bp) {
           font-size: 1.1rem;
           line-height: 134%;
+        }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.1rem * 1.28);
         }
       }
     }

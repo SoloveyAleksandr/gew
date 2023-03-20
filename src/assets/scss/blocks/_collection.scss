@@ -7,6 +7,10 @@
     padding-top: 7.8rem;
   }
 
+  @include breakpoint($sm-bp) {
+    padding-top: calc(7.8rem * 1.28);
+  }
+
   &-title {
     font-size: 4.8rem;
     font-weight: $f-b;
@@ -17,6 +21,11 @@
     @include breakpoint($xl-bp) {
       font-size: 1.8rem;
       margin-bottom: 1.8rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      font-size: calc(1.8rem * 1.28);
+      margin-bottom: calc(1.8rem * 1.28);
     }
   }
 
@@ -31,6 +40,11 @@
     @include breakpoint($xl-bp) {
       font-size: 1.3rem;
       margin-bottom: 3.2rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      font-size: calc(1.3rem * 1.28);
+      margin-bottom: calc(3.2rem * 1.28);
     }
 
     &_semi-bold {

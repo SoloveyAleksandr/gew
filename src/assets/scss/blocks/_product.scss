@@ -7,6 +7,10 @@
     padding-top: 9.4rem;
   }
 
+  @include breakpoint($sm-bp) {
+    padding-top: calc(9.4rem * 1.28);
+  }
+
   &-head {
     background-color: #F4F3EE;
     height: 50rem;
@@ -32,11 +36,8 @@
     }
 
     @include breakpoint($sm-bp) {
-      height: 27rem;
-    }
-
-    @include breakpoint($xs-bp) {
-      height: 23.2rem;
+      height: calc(23.2rem * 1.28);
+      padding: calc(3.1rem * 1.28) calc(1.5rem * 1.28) calc(1.5rem * 1.28) calc(1.5rem * 1.28);
     }
 
     &-container {
@@ -89,7 +90,7 @@
       }
 
       @include breakpoint($sm-bp) {
-        font-size: 1.8rem;
+        font-size: calc(1.8rem * 1.28);
       }
     }
 
@@ -106,7 +107,7 @@
       }
 
       @include breakpoint($sm-bp) {
-        gap: 0.5rem;
+        gap: calc(0.5rem * 1.28);
       }
 
       &__text {
@@ -116,7 +117,7 @@
         color: rgba(70, 63, 58, 1);
 
         @include breakpoint($sm-bp) {
-          font-size: 1.1rem;
+          font-size: calc(1.1rem * 1.28);
         }
       }
 
@@ -127,7 +128,7 @@
         color: rgba(138, 129, 124, 1);
 
         @include breakpoint($sm-bp) {
-          font-size: 1.8rem;
+          font-size: calc(1.8rem * 1.28);
         }
       }
 
@@ -145,6 +146,10 @@
         gap: 1rem;
       }
 
+      @include breakpoint($sm-bp) {
+        gap: calc(1rem * 1.28);
+      }
+
       &__like {
         border: 0.2rem solid #BCB8B1;
         padding: 0;
@@ -153,6 +158,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include breakpoint($sm-bp) {
+          height: calc(7.4rem * 1.28);
+          width: calc(7.4rem * 1.28);
+        }
 
         svg {
           object-fit: contain;
@@ -170,8 +180,8 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 5.5rem;
-          height: 5.5rem;
+          width: calc(5.5rem * 1.28);
+          height: calc(5.5rem * 1.28);
         }
       }
     }
@@ -205,10 +215,10 @@
       }
 
       @include breakpoint($sm-bp) {
-        font-size: 1.1rem;
-        line-height: 1.1rem;
-        padding: 2rem;
-        letter-spacing: 0.2rem;
+        font-size: calc(1.1rem * 1.28);
+        line-height: calc(1.1rem * 1.28);
+        padding: calc(2rem * 1.28);
+        letter-spacing: calc(0.2rem * 1.28);
         text-transform: uppercase;
       }
     }
@@ -236,6 +246,11 @@
       flex-direction: column;
       margin-bottom: 3.2rem;
       margin-top: 3.2rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: calc(3.2rem * 1.28);
+      margin-top: calc(3.2rem * 1.28);
     }
 
     &> {
@@ -272,6 +287,11 @@
 
         @include breakpoint($lb-bp) {
           max-width: 100%;
+        }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.3rem * 1.28);
+          line-height: calc(2.1rem * 1.28);
         }
       }
 
@@ -342,11 +362,7 @@
       }
 
       @include breakpoint($sm-bp) {
-        height: 25rem;
-      }
-
-      @include breakpoint($xs-bp) {
-        height: 18.8rem;
+        height: calc(18.8rem * 1.28);
       }
 
       &__img {
@@ -370,6 +386,10 @@
       margin: 0 auto 7.2rem;
     }
 
+    @include breakpoint($sm-bp) {
+      margin-bottom: calc(7.2rem * 1.28);
+    }
+
     &-img {
       width: 100%;
       height: 70rem;
@@ -387,11 +407,7 @@
       }
 
       @include breakpoint($sm-bp) {
-        height: 30rem;
-      }
-
-      @include breakpoint($xs-bp) {
-        height: 21.8rem;
+        height: calc(21.8rem * 1.28);
       }
 
       &__img {
@@ -406,12 +422,20 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 1.8rem;
+
+      @include breakpoint($sm-bp) {
+        column-gap: calc(1.8rem * 1.28);
+      }
     }
   }
 
   &-swiper {
     width: 100%;
     margin-bottom: 2rem;
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: calc(2rem * 1.28);
+    }
 
     &-pagination {
       display: flex;
@@ -422,6 +446,10 @@
 
       @include breakpoint($jb-bp) {
         gap: 1.3rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        gap: calc(1.3rem * 1.28);
       }
 
       &__bullet {
@@ -440,6 +468,11 @@
         @include breakpoint($lb-bp) {
           width: 0.72rem;
           height: 0.72rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          width: calc(0.72rem * 1.28);
+          height: calc(0.72rem * 1.28);
         }
       }
     }
