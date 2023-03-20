@@ -5,6 +5,10 @@
     padding-top: 9.4rem;
   }
 
+  @include breakpoint($sm-bp) {
+    padding-top: calc(9.4rem * 1.28);
+  }
+
   &-title {
     width: 100%;
     font-size: 2.4rem;
@@ -15,6 +19,10 @@
     @include breakpoint($xl-bp) {
       font-size: 1.8rem;
       text-align: right;
+    }
+
+    @include breakpoint($sm-bp) {
+      font-size: calc(1.8rem * 1.28);
     }
   }
 
@@ -33,7 +41,8 @@
     }
 
     @include breakpoint($sm-bp) {
-      grid-gap: 0.9rem;
+      grid-gap: calc(0.9rem * 1.28);
+      margin-bottom: calc(9.6rem * 1.28);
     }
   }
 
@@ -50,7 +59,7 @@
       }
 
       @include breakpoint($sm-bp) {
-        gap: 0.9rem;
+        gap: calc(0.9rem * 1.28);
       }
 
       &-img {
@@ -69,7 +78,7 @@
         }
 
         @include breakpoint($sm-bp) {
-          height: 23.7rem;
+          height: calc(23.7rem * 1.28);
         }
 
         &__img {
@@ -91,20 +100,20 @@
       }
 
       @include breakpoint($sm-bp) {
-        gap: 0.9rem;
+        gap: calc(0.9rem * 1.28);
       }
 
       &-link {
         white-space: normal;
         text-align: center;
 
-        @include breakpoint($xs-bp) {
-          padding: 1.3rem 1.9rem 1.3rem 1.3rem;
+        @include breakpoint($sm-bp) {
+          padding: calc(1.3rem * 1.28) calc(1.9rem * 1.28) calc(1.3rem * 1.28) calc(1.3rem * 1.28);
           gap: 0;
           justify-content: space-between;
 
           & svg {
-            width: 3rem;
+            width: calc(3rem * 1.28);
           }
         }
       }
@@ -130,7 +139,7 @@
 
         @include breakpoint($sm-bp) {
           height: 100%;
-          min-height: 21.6rem;
+          min-height: calc(21.6rem * 1.28);
         }
 
         &__img {
@@ -176,7 +185,7 @@
         }
 
         @include breakpoint($sm-bp) {
-          height: 21.8rem;
+          height: calc(21.8rem * 1.28);
         }
 
         &__img {

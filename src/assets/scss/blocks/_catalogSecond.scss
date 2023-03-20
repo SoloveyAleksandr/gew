@@ -273,7 +273,8 @@
       }
 
       @include breakpoint($xs-bp) {
-        left: -3rem;
+        left: -5rem;
+        top: -5rem;
       }
     }
   }
@@ -410,7 +411,7 @@
   .catalog-list__container5 {
 
     @include breakpoint($xs-bp) {
-      height: 16rem;
+      height: 22rem;
     }
 
     .catalog-list__containerHelper {
@@ -529,7 +530,7 @@
       }
 
       @include breakpoint($xs-bp) {
-        left: -3.9rem;
+        left: -5.9rem;
       }
 
       
@@ -678,7 +679,7 @@
     }
 
     @include breakpoint($xs-bp) {
-      height: 42rem;
+      height: 51rem;
     }
 
     .catalog-list__containerHelper {
@@ -745,6 +746,10 @@
 
     @include breakpoint($sm-bp) {
       height: 11rem;
+    }
+
+    @include breakpoint($xs-bp) {
+      height: 16rem;
     }
 
     .catalog-list__containerHelper {
@@ -835,8 +840,9 @@
       }
 
       @include breakpoint($xs-bp) {
-        height: 11rem;
-        right: -16.4rem;
+        height: 14rem;
+        right: -21.4rem;
+        top: -15rem;
       }
 
     }
@@ -904,6 +910,7 @@
 
       @include breakpoint($xs-bp) {
         height: 12.6rem;
+
       }
 
     }
@@ -938,7 +945,7 @@
     }
 
     @include breakpoint($xs-bp) {
-      height: 18.1rem;
+      height: 26.1rem;
     }
 
     .catalog-list__containerHelper {
@@ -1071,7 +1078,7 @@
     }
 
     @include breakpoint($xs-bp) {
-      height: 30rem;
+      height: 38rem;
     }
 
     .catalog-list__containerHelper {
@@ -1204,6 +1211,10 @@
 
     @include breakpoint($sm-bp) {
       height: 15.3rem;
+    }
+
+    @include breakpoint($xs-bp) {
+      height: 29.3rem;
     }
 
     .catalog-list__containerHelper {

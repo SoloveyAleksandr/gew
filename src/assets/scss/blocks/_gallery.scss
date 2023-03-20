@@ -7,6 +7,10 @@
     padding-top: 9.4rem;
   }
 
+  @include breakpoint($sm-bp) {
+    padding-top: calc(9.4rem * 1.28);
+  }
+
   &-container {
     max-width: 165.8rem;
     margin: 0 auto;
@@ -21,6 +25,11 @@
 
     @include breakpoint($lb-bp) {
       gap: 1.8rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: calc(7rem * 1.28);
+      gap: calc(1.8rem * 1.28);
     }
 
     &-item {
@@ -40,6 +49,10 @@
 
       @include breakpoint($lb-bp) {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint($sm-bp) {
+        padding-bottom: calc(1.8rem * 1.28);
       }
 
       &:nth-child(odd) &-box {
@@ -83,6 +96,10 @@
         @include breakpoint($xs-bp) {
           font-size: 1.6rem;
         }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.6rem * 1.28);
+        }
       }
 
       &-link {
@@ -99,6 +116,11 @@
           padding: 2rem 0rem;
           display: flex;
           justify-content: center;
+        }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.1rem * 1.28);
+          padding: calc(2rem * 1.28) 0;
         }
       }
 
@@ -128,11 +150,7 @@
         }
 
         @include breakpoint($sm-bp) {
-          height: 21rem;
-        }
-
-        @include breakpoint($xs-bp) {
-          height: 16rem;
+          height: calc(16rem * 1.28);
         }
 
         &__img {
@@ -186,5 +204,10 @@
         }
       }
     }
+  }
+
+
+  .gallery-list-item:last-child {
+    border-bottom: none;
   }
 }

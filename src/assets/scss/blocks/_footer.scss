@@ -1,6 +1,10 @@
 .footer {
   margin-bottom: 7rem;
 
+  @include breakpoint($sm-bp) {
+    margin-bottom: calc(5rem * 1.28);
+  }
+
   &-container {
     max-width: 166.9rem;
     // margin: 0 5% 0 auto;
@@ -14,6 +18,10 @@
 
     @include breakpoint($xl-bp) {
       padding-top: 1.4rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      padding: calc(0.4rem * 1.28);
     }
   }
 
@@ -69,6 +77,10 @@
         }
       }
 
+      @include breakpoint($sm-bp) {
+        gap: calc(1.2rem * 1.28);
+      }
+
       &:last-child {
         // padding-top: 2.2rem;
 
@@ -99,6 +111,11 @@
         line-height: 3.2rem;
       }
 
+      @include breakpoint($sm-bp) {
+        font-size: calc(1.1rem * 1.28);
+        line-height: calc(3.2rem * 1.28);
+      }
+
       &_bold {
         font-weight: $f-s;
         line-height: 100%;
@@ -113,6 +130,11 @@
         @include breakpoint($xl-bp) {
           font-size: 1.3rem;
           margin-bottom: 0.1rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.3rem * 1.28);
+          margin-bottom: calc(0.1rem * 1.28);
         }
       }
     }
@@ -129,6 +151,11 @@
       @include breakpoint($xl-bp) {
         width: 7.4rem;
         height: 9.4rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        width: calc(7.4rem * 1.28);
+        height: calc(9.4rem * 1.28);
       }
 
       &__img {
@@ -154,6 +181,11 @@
       font-size: 1.3rem;
       font-weight: $f-r;
       line-height: 2.8rem;
+
+      @include breakpoint($sm-bp) {
+        font-size: calc(1.3rem * 1.28);
+        line-height: calc(2.8rem * 1.28);
+      }
     }
 
     &-icons {
@@ -161,8 +193,8 @@
       align-items: center;
       gap: 6.4rem;
 
-      @include breakpoint($xs-bp) {
-        gap: 3rem;
+      @include breakpoint($sm-bp) {
+        gap: calc(3rem * 1.28);
       }
     }
 
@@ -178,6 +210,11 @@
       @include breakpoint($xl-bp) {
         width: 2rem;
         height: 2rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        width: calc(2rem * 1.28);
+        height: calc(2rem * 1.28);
       }
 
       &__icon {

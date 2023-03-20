@@ -54,11 +54,22 @@ html {
     border-radius: 1.3rem;
   }
 
+  @include breakpoint($sm-bp) {
+    padding: calc(1.7rem * 1.28);
+    font-size: calc(1.1rem * 1.28);
+    border-radius: calc(1.3rem * 1.28);
+  }
+
   &__icon {
     width: 5.3rem;
     height: 1.1rem;
     fill: #000000;
     transition: 0.3s;
+
+    @include breakpoint($sm-bp) {
+      width: calc(5.3rem * 1.28);
+      height: calc(1.1rem * 1.28);
+    }
   }
 }
 

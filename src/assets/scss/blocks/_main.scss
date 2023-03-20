@@ -17,6 +17,10 @@
     @include breakpoint($xs-bp) {
       top: 2.2rem;
     }
+
+    @include breakpoint($sm-bp) {
+      top: calc(2.2rem * 1.28);
+    }
   }
 
   &-title {
@@ -36,6 +40,8 @@
 
     @include breakpoint($sm-bp) {
       max-width: 11rem;
+      font-size: calc(2.4rem * 1.28);
+      margin-bottom: calc(1.6rem * 1.28);
     }
   }
 
@@ -54,7 +60,8 @@
     }
 
     @include breakpoint($sm-bp) {
-      line-height: 1.6rem;
+      font-size: calc(1.1rem * 1.28);
+      line-height: calc(1.6rem * 1.28);
       max-width: 10rem;
     }
   }
@@ -103,15 +110,18 @@
     }
 
     @include breakpoint($sm-bp) {
-      width: 26rem;
-      height: 26rem;
-      margin-bottom: 6.1rem;
+      // width: 26rem;
+      // height: 26rem;
+      // margin-bottom: 6.1rem;
+      width: calc(19.2rem * 1.28);
+      height: calc(19.2rem * 1.28);
+      margin-bottom: calc(6.1rem * 1.28);
     }
 
-    @include breakpoint($xs-bp) {
-      width: 19.2rem;
-      height: 19.2rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   width: 19.2rem;
+    //   height: 19.2rem;
+    // }
 
     &-bg {
       background: radial-gradient(50% 40% at 50% 45%, #969696 0, rgba(247, 247, 247, 0) 100%);
@@ -135,6 +145,8 @@
 
       @include breakpoint($sm-bp) {
         background: radial-gradient(50% 27% at 66% 43%, #969696 0, rgba(247, 247, 247, 0) 100%);
+        padding-top: calc(6.1rem * 1.28);
+        padding-bottom: calc(8rem * 1.28);
       }
     }
 
@@ -336,7 +348,8 @@
     }
 
     @include breakpoint($sm-bp) {
-      margin-bottom: 19rem;
+      // margin-bottom: 19rem;
+      margin-bottom: calc(19rem * 1.28);
     }
 
     &-item {
@@ -366,6 +379,10 @@
         @include breakpoint($xl-bp) {
           font-size: 1.1rem;
         }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.1rem * 1.28);
+        }
       }
 
       &-img {
@@ -391,6 +408,11 @@
         @include breakpoint($xl-bp) {
           font-size: 1.8rem;
           margin-bottom: 1.8rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.8rem * 1.28);
+          margin-bottom: 1.8rem * 1.28;
         }
       }
 
@@ -447,8 +469,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 15.7rem;
-          height: 10rem;
+          // width: 15.7rem;
+          // height: 10rem;
+          width: calc(15.7rem * 1.28);
+          height: calc(10rem * 1.28);
         }
       }
 
@@ -460,6 +484,10 @@
 
         @include breakpoint($xl-bp) {
           padding: 0.3rem 1.9rem 0.2rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          padding: calc(0.3rem * 1.28) calc(1.9rem * 1.28);
         }
       }
 
@@ -481,9 +509,12 @@
         }
 
         @include breakpoint($sm-bp) {
-          top: 2.6rem;
-          width: 14.8rem;
-          height: 10.3rem;
+          // top: 2.6rem;
+          // width: 14.8rem;
+          // height: 10.3rem;
+          top: calc(2.6rem * 1.28);
+          width: calc(14.8rem * 1.28);
+          height: calc(10.3rem * 1.28);
         }
       }
 
@@ -514,8 +545,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 14rem;
-          height: 18rem;
+          // width: 14rem;
+          // height: 18rem;
+          width: calc(14rem * 1.28);
+          height: calc(18rem * 1.28);
         }
       }
 
@@ -535,10 +568,13 @@
         }
 
         @include breakpoint($sm-bp) {
-          bottom: calc(100% - 18rem);
-          right: calc(100% - 14rem);
-          width: fit-content;
-          padding: 0.6rem 0.5rem 0.3rem;
+          // bottom: calc(100% - 18rem);
+          // right: calc(100% - 14rem);
+          // width: fit-content;
+          // padding: 0.6rem 0.5rem 0.3rem;
+          bottom: calc(100% - (18rem * 1.28));
+          right: calc(100% - (14rem * 1.28));
+          padding: calc(0.6rem * 1.28) calc(0.5rem * 1.28);
         }
       }
 
@@ -559,8 +595,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 15.6rem;
-          height: 16.3rem;
+          // width: 15.6rem;
+          // height: 16.3rem;
+          width: calc(15.6rem * 1.28);
+          height: calc(16.3rem * 1.28);
         }
       }
 
@@ -574,7 +612,8 @@
         }
 
         @include breakpoint($sm-bp) {
-          transform: translate(0, -4rem);
+          // transform: translate(0, -4rem);
+          transform: translate(0, -4rem * 1.28);
         }
       }
 
@@ -593,8 +632,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 11.8rem;
-          height: 15.7rem;
+          // width: 11.8rem;
+          // height: 15.7rem;
+          width: calc(11.8rem * 1.28);
+          height: calc(15.7rem * 1.28);
         }
       }
 
@@ -606,6 +647,10 @@
         @include breakpoint($lb-bp) {
           width: fit-content;
           padding: 0.6rem 1.3rem 0.6rem 3.2rem;
+        }
+
+        @include breakpoint($sm-bp) {
+          padding: calc(0.6rem * 1.28) calc(1.3rem * 1.28);
         }
       }
 
@@ -627,10 +672,14 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 17.7rem;
-          height: 5.8rem;
-          top: 2rem;
-          left: -1rem;
+          // width: 17.7rem;
+          // height: 5.8rem;
+          // top: 2rem;
+          // left: -1rem;
+          width: calc(17.7rem * 1.28);
+          height: calc(5.8rem * 1.28);
+          top: calc(2rem * 1.28);
+          left: calc(-1rem * 1.28);
         }
       }
 
@@ -646,7 +695,8 @@
         }
 
         @include breakpoint($sm-bp) {
-          transform: translate(0, 4rem);
+          // transform: translate(0, 4rem);
+          transform: translate(0, 4rem * 1.28);
         }
       }
 
@@ -666,8 +716,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 15.2rem;
-          height: 12.8rem;
+          // width: 15.2rem;
+          // height: 12.8rem;
+          width: calc(15.2rem * 1.28);
+          height: calc(12.8rem * 1.28);
         }
       }
 
@@ -687,8 +739,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          right: calc(100% - 15.2rem);
-          padding: 0.4rem 0.5rem;
+          // right: calc(100% - 15.2rem);
+          // padding: 0.4rem 0.5rem;
+          right: calc(100% - (15.2rem * 1.28));
+          padding: calc(0.4rem * 1.28) calc(0.5rem * 1.28);
         }
       }
 
@@ -710,10 +764,14 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 11.7rem;
-          height: 16.5rem;
-          top: -0.5rem;
-          left: -2.1rem;
+          // width: 11.7rem;
+          // height: 16.5rem;
+          // top: -0.5rem;
+          // left: -2.1rem;
+          width: calc(11.7rem * 1.28);
+          height: calc(16.5rem * 1.28);
+          top: calc(-0.5rem * 1.28);
+          left: calc(-2.1rem * 1.28);
         }
       }
 
@@ -756,8 +814,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 12.3rem;
-          height: 11.9rem;
+          // width: 12.3rem;
+          // height: 11.9rem;
+          width: calc(12.3rem * 1.28);
+          height: calc(11.9rem * 1.28);
         }
       }
 
@@ -773,7 +833,8 @@
 
         @include breakpoint($sm-bp) {
           width: fit-content;
-          padding: 0.3rem 2.8rem;
+          // padding: 0.3rem 2.8rem;
+          padding: calc(0.3rem * 1.28) calc(2.8rem * 1.28);
         }
       }
 
@@ -795,10 +856,14 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 12rem;
-          height: 12.2rem;
-          top: 1.7rem;
-          left: 1.5rem;
+          // width: 12rem;
+          // height: 12.2rem;
+          // top: 1.7rem;
+          // left: 1.5rem;
+          width: calc(12rem * 1.28);
+          height: calc(12.2rem * 1.28);
+          top: calc(1.7rem * 1.28);
+          left: calc(1.5rem * 1.28);
         }
       }
 
@@ -818,7 +883,8 @@
         }
 
         @include breakpoint($sm-bp) {
-          transform: translate(0, 7rem);
+          // transform: translate(0, 7rem);
+          transform: translate(0, 7rem * 1.28);
         }
       }
 
@@ -838,8 +904,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 16.3rem;
-          height: 10.6rem;
+          // width: 16.3rem;
+          // height: 10.6rem;
+          width: calc(16.3rem * 1.28);
+          height: calc(10.6rem * 1.28);
         }
       }
 
@@ -854,9 +922,12 @@
         }
 
         @include breakpoint($sm-bp) {
-          right: calc(100% - 16.3rem);
+          // right: calc(100% - 16.3rem);
+          // width: fit-content;
+          // padding: 0.2rem 1rem 0.3rem;
+          right: calc(100% - (16.3rem * 1.28));
           width: fit-content;
-          padding: 0.2rem 1rem 0.3rem;
+          padding: calc(0.3rem * 1.28) calc(1rem * 1.28);
         }
       }
 
@@ -878,8 +949,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 16.3rem;
-          height: 9.8rem;
+          // width: 16.3rem;
+          // height: 9.8rem;
+          width: calc(16.3rem * 1.28);
+          height: calc(9.8rem * 1.28);
         }
       }
     }
@@ -900,7 +973,11 @@
     }
 
     @include breakpoint($sm-bp) {
+
       margin-bottom: 15.8rem;
+
+      margin-bottom: calc(10.8rem * 1.28);
+
     }
 
     &-title {
@@ -914,6 +991,11 @@
         font-size: 1.8rem;
         margin-bottom: 2.5rem;
       }
+
+      @include breakpoint($sm-bp) {
+        font-size: calc(1.8rem * 1.28);
+        margin-bottom: calc(2.5rem * 1.28);
+      }
     }
 
     &-container {
@@ -922,7 +1004,8 @@
       gap: 11.2rem;
 
       @include breakpoint($sm-bp) {
-        gap: 12.2rem;
+        // gap: 12.2rem;
+        gap: calc(12.2rem * 1.28);
       }
     }
 
@@ -940,7 +1023,8 @@
       @include breakpoint($sm-bp) {
         align-items: center;
         justify-content: flex-start;
-        gap: 2.3rem;
+        // gap: 2.3rem;
+        gap: calc(2.3rem * 1.28);
         position: relative;
       }
 
@@ -973,6 +1057,11 @@
           height: 15.5rem;
         }
 
+        @include breakpoint($sm-bp) {
+          width: calc(20.7rem * 1.28);
+          height: calc(15.5rem * 1.28);
+        }
+
         &__img {
           object-fit: cover;
           object-position: center center;
@@ -994,6 +1083,11 @@
           margin-bottom: 1.4rem;
           line-height: 100%;
         }
+
+        @include breakpoint($sm-bp) {
+          font-size: calc(1.8rem * 1.28);
+          margin-bottom: calc(1.4rem * 1.28);
+        }
       }
 
       &-description {
@@ -1014,6 +1108,8 @@
 
         @include breakpoint($sm-bp) {
           margin-bottom: 0rem;
+          font-size: calc(1.1rem * 1.28);
+          line-height: calc(1.3rem * 1.28);
         }
       }
 
@@ -1021,7 +1117,7 @@
         @include breakpoint($sm-bp) {
           position: absolute;
           left: 0;
-          top: calc(100% + 3rem);
+          top: calc(100% + 3rem * 1.28);
           width: 100%;
           justify-content: space-between;
         }
@@ -1041,6 +1137,10 @@
       margin-bottom: 7.2rem;
     }
 
+    @include breakpoint($sm-bp) {
+      margin-bottom: calc(7.2rem * 1.28);
+    }
+
     &-title {
       font-size: 4.8rem;
       font-weight: $f-eb;
@@ -1051,6 +1151,11 @@
         font-size: 1.8rem;
         margin-bottom: 2.3rem;
       }
+
+      @include breakpoint($sm-bp) {
+        font-size: calc(1.8rem * 1.28);
+        margin-bottom: calc(2.3rem * 1.28);
+      }
     }
 
     &-swiper {
@@ -1058,6 +1163,10 @@
 
       @include breakpoint($xl-bp) {
         margin-bottom: 1.4rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        margin-bottom: calc(1.4rem * 1.28);
       }
 
       &-slide {
@@ -1087,8 +1196,10 @@
         }
 
         @include breakpoint($sm-bp) {
-          width: 13rem;
-          height: 12.6rem;
+          // width: 13rem;
+          // height: 12.6rem;
+          width: calc(13rem * 1.28);
+          height: calc(12.6rem * 1.28);
         }
 
         &.swiper-slide-active &__img,
@@ -1112,7 +1223,8 @@
           }
 
           @include breakpoint($sm-bp) {
-            height: 10.4rem;
+            // height: 10.4rem;
+            height: calc(10.4rem * 1.28);
           }
         }
       }
@@ -1124,6 +1236,10 @@
       align-items: center;
       gap: 1.3rem;
 
+      @include breakpoint($sm-bp) {
+        gap: calc(1.3rem * 1.28);
+      }
+
       &__bullet {
         width: 0.72rem;
         height: 0.72rem;
@@ -1132,6 +1248,11 @@
         border-radius: 50%;
         transition: 0.3s;
         cursor: pointer;
+
+        @include breakpoint($sm-bp) {
+          width: calc(0.72rem * 1.28);
+          height: calc(0.72rem * 1.28);
+        }
 
         &._active {
           background-color: #121212;

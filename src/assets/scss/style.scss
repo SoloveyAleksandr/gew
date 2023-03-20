@@ -33,9 +33,9 @@ html {
   //   font-size: calc(100vw / 375 * 10);
   // }
 
-  @include breakpoint($xs-bp) {
-    font-size: calc(100vw / 390 * 10);
-  }
+  // @include breakpoint($xs-bp) {
+  //   font-size: calc(100vw / 390 * 10);
+  // }
 }
 
 *,
