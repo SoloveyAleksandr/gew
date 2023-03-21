@@ -574,7 +574,7 @@
           // padding: 0.6rem 0.5rem 0.3rem;
           bottom: calc(100% - (18rem * 1.28));
           right: calc(100% - (14rem * 1.28));
-          padding: calc(0.6rem * 1.28) calc(0.5rem * 1.28);
+          padding: calc(0.6rem * 1.28) calc(1.5rem * 1.28);
         }
       }
 
@@ -613,7 +613,7 @@
 
         @include breakpoint($sm-bp) {
           // transform: translate(0, -4rem);
-          transform: translate(0, -4rem * 1.28);
+          transform: translate(0, -3rem * 1.28);
         }
       }
 
@@ -640,8 +640,10 @@
       }
 
       &:nth-child(4) &-name {
-        bottom: 0;
-        left: 0;
+        // bottom: 0;
+        // left: 0;
+        bottom: -0.1rem;
+        left: -0.1rem;
         padding: 1.2rem 4.5rem;
 
         @include breakpoint($lb-bp) {
@@ -650,7 +652,7 @@
         }
 
         @include breakpoint($sm-bp) {
-          padding: calc(0.6rem * 1.28) calc(1.3rem * 1.28);
+          padding: calc(0.6rem * 1.28) calc(1.5rem * 1.28);
         }
       }
 
@@ -742,7 +744,7 @@
           // right: calc(100% - 15.2rem);
           // padding: 0.4rem 0.5rem;
           right: calc(100% - (15.2rem * 1.28));
-          padding: calc(0.4rem * 1.28) calc(0.5rem * 1.28);
+          padding: calc(0.4rem * 1.28) calc(1.5rem * 1.28);
         }
       }
 
@@ -795,7 +797,7 @@
         }
 
         @include breakpoint($sm-bp) {
-          transform: translate(0, 0);
+          transform: translate(0, 2rem * 1.28);
         }
       }
 
@@ -925,7 +927,7 @@
           // right: calc(100% - 16.3rem);
           // width: fit-content;
           // padding: 0.2rem 1rem 0.3rem;
-          right: calc(100% - (16.3rem * 1.28));
+          right: calc(100% - (16.3rem * 1.28) - 0.1rem);
           width: fit-content;
           padding: calc(0.3rem * 1.28) calc(1rem * 1.28);
         }
@@ -976,7 +978,7 @@
 
       margin-bottom: 15.8rem;
 
-      margin-bottom: calc(10.8rem * 1.28);
+      margin-bottom: calc(20rem * 1.28);
 
     }
 

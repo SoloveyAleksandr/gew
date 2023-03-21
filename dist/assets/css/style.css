@@ -2199,7 +2199,7 @@ svg {
     .main-collections-item:nth-child(3) .main-collections-item-name {
         bottom: calc(100% - 23.04rem);
         right: calc(100% - 17.92rem);
-        padding: 0.768rem 0.64rem;
+        padding: 0.768rem 1.92rem;
     }
 }
 
@@ -2247,8 +2247,8 @@ svg {
 
 @media (max-width: 500px) {
     .main-collections-item:nth-child(4) {
-        -webkit-transform: translate(0, -5.12rem);
-        transform: translate(0, -5.12rem);
+        -webkit-transform: translate(0, -3.84rem);
+        transform: translate(0, -3.84rem);
     }
 }
 
@@ -2279,8 +2279,8 @@ svg {
 }
 
 .main-collections-item:nth-child(4) .main-collections-item-name {
-    bottom: 0;
-    left: 0;
+    bottom: -0.1rem;
+    left: -0.1rem;
     padding: 1.2rem 4.5rem;
 }
 
@@ -2295,7 +2295,7 @@ svg {
 
 @media (max-width: 500px) {
     .main-collections-item:nth-child(4) .main-collections-item-name {
-        padding: 0.768rem 1.664rem;
+        padding: 0.768rem 1.92rem;
     }
 }
 
@@ -2408,7 +2408,7 @@ svg {
 @media (max-width: 500px) {
     .main-collections-item:nth-child(5) .main-collections-item-name {
         right: calc(100% - 19.456rem);
-        padding: 0.512rem 0.64rem;
+        padding: 0.512rem 1.92rem;
     }
 }
 
@@ -2478,8 +2478,8 @@ svg {
 
 @media (max-width: 500px) {
     .main-collections-item:nth-child(6) {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 2.56rem);
+        transform: translate(0, 2.56rem);
     }
 }
 
@@ -2623,7 +2623,7 @@ svg {
 
 @media (max-width: 500px) {
     .main-collections-item:nth-child(7) .main-collections-item-name {
-        right: calc(100% - 20.864rem);
+        right: calc(100% - 20.864rem - 0.1rem);
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
@@ -2682,7 +2682,7 @@ svg {
 @media (max-width: 500px) {
     .main-colors {
         margin-bottom: 15.8rem;
-        margin-bottom: 13.824rem;
+        margin-bottom: 25.6rem;
     }
 }
 
