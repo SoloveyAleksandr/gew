@@ -51,9 +51,9 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @include breakpoint($xs-bp) {
-      margin-bottom: 0rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   margin-bottom: 0rem;
+    // }
 
     &-item {
       display: flex;
@@ -152,9 +152,9 @@
         font-size: 1.5rem;
       }
 
-      @include breakpoint($xs-bp) {
-        font-size: 1.1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   font-size: 1.1rem;
+      // }
     }
 
     .catalog-list__containerHelper {
@@ -186,9 +186,9 @@
 
   .catalog-list__container1 {
 
-    @include breakpoint($xs-bp) {
-      height: 16rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 16rem;
+    // }
     
     .catalog-list__containerHelper {
       background: #F2F2F4;
@@ -199,9 +199,9 @@
         height: 16rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 13rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 13rem;
+      // }
 
 
     }
@@ -209,9 +209,9 @@
     .catalog-list__title {
       padding: 0.8rem 4.1rem 0.7rem 3.9rem;
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2.1rem 0rem 1.9rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2.1rem 0rem 1.9rem;
+      // }
 
       @include breakpoint($sm-bp) {
         padding: 0.5rem 3rem 0.5rem 3rem;
@@ -228,17 +228,17 @@
         top: 5rem;
       }
 
-      @include breakpoint($xs-bp) {
-        top: 3rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: 3rem;
+      // }
     }
   }
 
   .catalog-list__container2 {
 
-    @include breakpoint($xs-bp) {
-      height: 21rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 21rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #F4F3EE;
@@ -257,10 +257,10 @@
         height: 108%;
       }
 
-      @include breakpoint($xs-bp) {
-        width: 81%;
-        height: 110%;
-      }
+      // @include breakpoint($xs-bp) {
+      //   width: 81%;
+      //   height: 110%;
+      // }
     }
 
     .catalog-list__title {
@@ -273,10 +273,10 @@
         right: 1rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 0.5rem 0rem 0.5rem;
-        right: 1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 0.5rem 0rem 0.5rem;
+      //   right: 1rem;
+      // }
     }
 
     .catalog-list__imgContainer {
@@ -292,10 +292,10 @@
         left: -5rem;
       }
 
-      @include breakpoint($xs-bp) {
-        left: -4rem;
-        top: -1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   left: -4rem;
+      //   top: -1rem;
+      // }
     }
   }
 
@@ -305,9 +305,9 @@
     //   margin-top: 4rem;
     // }
 
-    @include breakpoint($xs-bp) {
-      height: 15rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 15rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #BCB8B1;
@@ -332,10 +332,10 @@
         top: -2.2rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 19rem;
-        top: -3rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 19rem;
+      //   top: -3rem;
+      // }
 
 
     }
@@ -356,9 +356,9 @@
         left: 0;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2rem 0rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2rem 0rem 2rem;
+      // }
     }
 
     .catalog-list__imgContainer {
@@ -369,9 +369,9 @@
         top: 2.4rem;
       }
 
-      @include breakpoint($xs-bp) {
-        top: 1.4rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: 1.4rem;
+      // }
     }
   }
 
@@ -400,10 +400,10 @@
         top: 6.2rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 18rem;
-        width: 89%;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 18rem;
+      //   width: 89%;
+      // }
     }
 
     .catalog-list__title {
@@ -414,9 +414,9 @@
         padding: 0rem 5rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 4rem 0rem 4rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 4rem 0rem 4rem;
+      // }
 
       
     }
@@ -438,9 +438,9 @@
 
   .catalog-list__container5 {
 
-    @include breakpoint($xs-bp) {
-      height: 22rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 22rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #E0AFA0;
@@ -462,10 +462,10 @@
         top: 0rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 15.9rem;
-        top: -1.7rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 15.9rem;
+      //   top: -1.7rem;
+      // }
       
     }
 
@@ -477,9 +477,9 @@
         padding: 0rem 3.5rem 0rem 3.5rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 4.5rem 0rem 4.5rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 4.5rem 0rem 4.5rem;
+      // }
 
 
     }
@@ -494,17 +494,17 @@
         width: 85%;
       }
 
-      @include breakpoint($xs-bp) {
-        top: 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: 2rem;
+      // }
     }
   }
 
   .catalog-list__container6 {
 
-    @include breakpoint($xs-bp) {
-      height: 16rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 16rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #F2F2F4;
@@ -525,9 +525,9 @@
         top: 7rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 14.8rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 14.8rem;
+      // }
     }
 
     .catalog-list__title {
@@ -540,9 +540,9 @@
         padding: 0rem 2.6rem 0rem 2.6rem;
       }
       
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2.6rem 0rem 2.6rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2.6rem 0rem 2.6rem;
+      // }
     }
 
     .catalog-list__imgContainer {
@@ -560,9 +560,9 @@
         left: -5.9rem;
       }
 
-      @include breakpoint($xs-bp) {
-        left: -5.9rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   left: -5.9rem;
+      // }
 
       
     }
@@ -599,10 +599,10 @@
         height: 39rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 38rem;
-        top: 0rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 38rem;
+      //   top: 0rem;
+      // }
     }
 
     .catalog-list__title {
@@ -620,10 +620,10 @@
         line-height: 2.6rem;
       }
 
-      @include breakpoint($xs-bp) {
-        line-height: 1.6rem;
-        padding: 0.4rem 2rem 0.4rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   line-height: 1.6rem;
+      //   padding: 0.4rem 2rem 0.4rem 2rem;
+      // }
 
     }
 
@@ -669,9 +669,9 @@
         height: 89%;
       }
 
-      @include breakpoint($xs-bp) {
-        top: 1.1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: 1.1rem;
+      // }
     }
 
     .catalog-list__title {
@@ -684,9 +684,9 @@
         padding: 0rem 6rem 0rem 6rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2rem 0rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2rem 0rem 2rem;
+      // }
 
     }
 
@@ -697,11 +697,11 @@
       height: 95%;
       mix-blend-mode: screen;
 
-      @include breakpoint($xs-bp) {
-        top: 0;
-        right: 0;
-        width: 100%;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: 0;
+      //   right: 0;
+      //   width: 100%;
+      // }
     }
   }
 
@@ -716,9 +716,9 @@
       height: 50rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 51rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 51rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #FFEDDB;
@@ -739,10 +739,10 @@
         top: 4rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 16.8rem;
-        top: 0rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 16.8rem;
+      //   top: 0rem;
+      // }
 
 
 
@@ -758,9 +758,9 @@
         padding: 0rem 4rem 0rem 4rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 4rem 0rem 4rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 4rem 0rem 4rem;
+      // }
 
 
 
@@ -788,9 +788,9 @@
       height: 11rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 13rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 13rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #D9D9D9;
@@ -812,10 +812,10 @@
         top: 1.5rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 16.7rem;
-        top: -3.5rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 16.7rem;
+      //   top: -3.5rem;
+      // }
     }
 
     .catalog-list__title {
@@ -827,9 +827,9 @@
         padding: 0rem 1rem 0rem 1rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 1rem 0rem 1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 1rem 0rem 1rem;
+      // }
 
     }
 
@@ -843,9 +843,9 @@
         left: 4rem;
       }
 
-      @include breakpoint($xs-bp) {
-        top: 3.7rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: 3.7rem;
+      // }
     }
   }
 
@@ -861,9 +861,9 @@
       height: 2rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 0rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 0rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #8A3434;
@@ -889,11 +889,11 @@
         right: -22.4rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 12rem;
-        right: -21.4rem;
-        top: -15rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 12rem;
+      //   right: -21.4rem;
+      //   top: -15rem;
+      // }
 
     }
 
@@ -906,9 +906,9 @@
         padding: 0rem 3rem 0rem 3rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2rem 0rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2rem 0rem 2rem;
+      // }
 
 
     }
@@ -924,10 +924,10 @@
         width: 40%;
       }
 
-      @include breakpoint($xs-bp) {
-        left: 9.5rem;
-        width: 40%;
-      }
+      // @include breakpoint($xs-bp) {
+      //   left: 9.5rem;
+      //   width: 40%;
+      // }
     }
   }
 
@@ -938,9 +938,9 @@
       height: 24.1rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 18.1rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 18.1rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #F4F3EE;
@@ -960,10 +960,10 @@
         top: -7rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 20.6rem;
-        top: -12rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 20.6rem;
+      //   top: -12rem;
+      // }
 
     }
 
@@ -976,9 +976,9 @@
         padding: 0.2rem 1.7rem 0.7rem 1rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 1.5rem 0rem 1.5rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 1.5rem 0rem 1.5rem;
+      // }
 
     }
 
@@ -990,9 +990,9 @@
         top: 2rem;
       }
 
-      @include breakpoint($xs-bp) {
-        top: 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: 2rem;
+      // }
     }
   }
 
@@ -1004,9 +1004,9 @@
       height: 26.8rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 26.1rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 26.1rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #BCB8B1;
@@ -1036,10 +1036,10 @@
         width: 100%;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 17.2rem;
-        top: -20.1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 17.2rem;
+      //   top: -20.1rem;
+      // }
     }
 
     .catalog-list__title {
@@ -1052,9 +1052,9 @@
         padding: 0rem 2rem 0rem 2rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2rem 0rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2rem 0rem 2rem;
+      // }
 
     }
 
@@ -1070,10 +1070,10 @@
 
       }
 
-      @include breakpoint($xs-bp) {
-        left: 9rem;
-        top: -1.6rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   left: 9rem;
+      //   top: -1.6rem;
+      // }
     }
   }
 
@@ -1084,9 +1084,9 @@
       height: 13.6rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 5.6rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 5.6rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #BCB8B1;
@@ -1106,10 +1106,10 @@
         height: 12.2rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 11.2rem;
-        top: -10.1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 11.2rem;
+      //   top: -10.1rem;
+      // }
     }
 
     .catalog-list__title {
@@ -1121,9 +1121,9 @@
         padding: 0rem 2.5rem 0rem 2.5rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2rem 0rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2rem 0rem 2rem;
+      // }
 
     }
 
@@ -1145,9 +1145,9 @@
       height: 35rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 38rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 38rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #F2F2F4;
@@ -1168,10 +1168,10 @@
         height: 18.1rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 18.1rem;
-        top: -22rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 18.1rem;
+      //   top: -22rem;
+      // }
     }
 
     .catalog-list__title {
@@ -1183,9 +1183,9 @@
         padding: 0rem 1rem 0rem 1rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 1.5rem 0rem 1.5rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 1.5rem 0rem 1.5rem;
+      // }
 
     }
 
@@ -1200,9 +1200,9 @@
         width: 61%;
       }
 
-      @include breakpoint($xs-bp) {
-        width: 54%;
-      }
+      // @include breakpoint($xs-bp) {
+      //   width: 54%;
+      // }
     }
   }
 
@@ -1213,9 +1213,9 @@
       height: 23.1rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 6.1rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 6.1rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #F4F3EE;
@@ -1235,10 +1235,10 @@
         width: 68.3%;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 18.5rem;
-        top: -32.2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 18.5rem;
+      //   top: -32.2rem;
+      // }
     }
 
     .catalog-list__title {
@@ -1250,9 +1250,9 @@
         padding: 0rem 2rem 0rem 2rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2rem 0rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2rem 0rem 2rem;
+      // }
 
     }
 
@@ -1273,10 +1273,10 @@
         width: 116%;
       }
 
-      @include breakpoint($xs-bp) {
-        left: 3.7rem;
-        top: 0.4rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   left: 3.7rem;
+      //   top: 0.4rem;
+      // }
     }
   }
 
@@ -1287,9 +1287,9 @@
       height: 24.3rem;
     }
 
-    @include breakpoint($xs-bp) {
-      height: 14.3rem;
-    }
+    // @include breakpoint($xs-bp) {
+    //   height: 14.3rem;
+    // }
 
     .catalog-list__containerHelper {
       background: #FFEDDB;
@@ -1311,10 +1311,10 @@
         top: -26rem;
       }
 
-      @include breakpoint($xs-bp) {
-        top: -36.2rem;
-        height: 17.1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   top: -36.2rem;
+      //   height: 17.1rem;
+      // }
     }
 
     .catalog-list__title {
@@ -1326,9 +1326,9 @@
         padding: 0rem 2.1rem 0rem 2.1rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 2rem 0rem 2rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 2rem 0rem 2rem;
+      // }
 
 
     }
@@ -1383,10 +1383,10 @@
         top: -22rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 15.3rem;
-        top: -21.9rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 15.3rem;
+      //   top: -21.9rem;
+      // }
     }
 
     .catalog-list__title {
@@ -1398,9 +1398,9 @@
         padding: 0rem 1rem 0rem 1rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 1rem 0rem 1rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 1rem 0rem 1rem;
+      // }
 
 
     }
@@ -1454,10 +1454,10 @@
         top: -22rem;
       }
 
-      @include breakpoint($xs-bp) {
-        height: 15.3rem;
-        top: -23rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   height: 15.3rem;
+      //   top: -23rem;
+      // }
     }
 
     .catalog-list__title {
@@ -1470,9 +1470,9 @@
         padding: 0rem 1.3rem 0rem 1.4rem;
       }
 
-      @include breakpoint($xs-bp) {
-        padding: 0rem 1.3rem 0rem 1.4rem;
-      }
+      // @include breakpoint($xs-bp) {
+      //   padding: 0rem 1.3rem 0rem 1.4rem;
+      // }
 
 
     }
