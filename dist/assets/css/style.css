@@ -5900,6 +5900,7 @@ svg {
     padding: 0.8rem 5.4rem 0.6rem 5.5rem;
     left: 0;
     top: 0;
+    z-index: 10;
 }
 
 @media (max-width: 500px) {
